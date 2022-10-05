@@ -1,0 +1,86 @@
+// MALL VIEW
+@media screen and (min-width: 1280px) /* PC */
+{
+    #mall_terms
+    {
+        z-index: 1;
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        padding-top: 133px;
+        padding-bottom: 133px;
+
+        .term
+        {
+            box-sizing: border-box;
+            width: 1200px;
+            margin: auto;
+            padding: 70px;
+            border: 1px solid #ACACAC;
+            >*{ line-height: 1.6; }
+
+            h1{ font-size: 32px; text-align: center; }
+            h2{ font-size: 24px; }
+            h3{ font-size: 20px; color: #444444; }
+            .h4{ font-size: 16px; color: #777777; padding-left: 30px; padding-bottom: 30px; }
+            .gap { height: 80px; }
+        }
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1279px) /* TABLET */
+{
+    #mall_terms
+    {
+        z-index: 1;
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        .term
+        {
+            box-sizing: border-box;
+            width: 100%;
+            margin: auto;
+            padding: 50px;
+            border: 1px solid #ACACAC;
+            >*  {
+                    line-height: 1.6;
+                    zoom: 0.8;
+                }
+
+            h1{ font-size: 32px; text-align: center; }
+            h2{ font-size: 24px; }
+            h3{ font-size: 20px; color: #444444; }
+            .h4{ font-size: 16px; color: #777777; padding-left: 30px; padding-bottom: 30px; }
+            .gap { height: 80px; }
+        }
+    }
+}
+@media screen and (max-width: 768px) /* MOBILE */
+{
+    #mall_terms
+    {
+        z-index: 1;
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0px 15px 100px 15px;
+
+        .term
+        {
+            box-sizing: border-box;
+            width: 100%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ACACAC;
+            >*  { line-height: 1.6; }
+            h1{ font-size: 26px; text-align: center; }
+            h2{ font-size: 20px; }
+            h3{ font-size: 17px; color: #444444; }
+            .h4{ font-size: 14px; color: #777777; padding-left: 15px; padding-bottom: 15px; }
+            .gap { height: 50px; }
+        }
+    }
+}

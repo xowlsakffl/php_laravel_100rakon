@@ -1,0 +1,110 @@
+// MALL VIEW
+@media screen and (min-width: 1280px) /* PC */
+{
+    #mall_intro
+    {
+        background-image: url('/images/intro_bg1.png');
+
+        .panel
+        {
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            width: 1280px;
+            margin: auto;
+            padding: 300px 0px 180px 0px;
+
+            opacity: 0;
+            transition-duration:1.5s;
+
+            .left
+            {
+                width: 640px;
+            }
+            .right
+            {
+                width: 640px;
+                font-size: 17px;
+                line-height: 2.35;
+                color: #FFFFFF;
+            }
+        }
+        .show
+        {
+            opacity: 1;
+        }
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1279px) /* TABLET */
+{
+    #mall_intro
+    {
+        background-image: url('/images/intro_bg1.png');
+
+        .panel
+        {
+            box-sizing: border-box;
+            display: flex;
+            width: 100%;
+            margin: auto;
+            padding: 200px 70px 100px 70px;
+
+            opacity: 0;
+            transition-duration:1.5s;
+
+            .left
+            {
+                width: 45%;
+                img { width: 80%; margin-top: 0px; }
+            }
+            .right
+            {
+                flex-grow: 1;
+                width: 55%;
+                font-size: 15px;
+                line-height: 2.35;
+                color: #FFFFFF;
+            }
+        }
+        .show
+        {
+            opacity: 1;
+        }
+    }
+}
+@media screen and (max-width: 768px) /* MOBILE */
+{
+    #mall_intro
+    {
+        background-image: url('/images/intro_bg1.png');
+
+        .panel
+        {
+            box-sizing: border-box;
+            width: 100%;
+            margin: auto;
+            padding: 30px 10px 100px 10px;
+
+            opacity: 0;
+            transition-duration:1.5s;
+
+            .left
+            {
+                width: 100%;
+                text-align: center;
+                img { width: 70%; }
+            }
+            .right
+            {
+                width: 100%;
+                font-size: 15px;
+                line-height: 2.35;
+                color: #FFFFFF;
+            }
+        }
+        .show
+        {
+            opacity: 1;
+        }
+    }
+}

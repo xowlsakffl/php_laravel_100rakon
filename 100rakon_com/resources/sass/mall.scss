@@ -1,0 +1,41 @@
+//앱 기본 설정
+@charset "UTF-8";
+
+/* FONT-FAMILY */
+@import 'https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Roboto&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap';
+@import 'https://fonts.googleapis.com/earlyaccess/kopubbatang.css';
+@import 'https://fonts.googleapis.com/css2?family=Montserrat&display=swap';
+
+@font-face
+{
+    font-family: 'AppleSDGothicNeoM00';
+    src: url('/fonts/AppleSDGothicNeoM00.ttf')  format('truetype'), /* Safari, Android, iOS : /public/fonts에 강제로 박아넣음*/
+}
+
+@import "./mall/basic.scss";
+@import "./mall/header.scss";
+@import "./mall/footer.scss";
+
+@import "./mall/home.scss";
+@import "./mall/intro.scss";
+@import "./mall/saranghae.scss";
+@import "./mall/qna.scss";
+@import "./mall/terms.scss";
+
+@import "./mall/view.scss";
+@import "./mall/basket.scss";
+@import "./mall/order.scss";
+@import "./mall/myorder.scss";
+@import "./mall/myorderSubscrib.scss";
+@import "./mall/myaddress.scss";
+@import "./mall/myinfo.scss";
+@import "./mall/list.scss";
+@import "./mall/login.scss";
+@import "./mall/register.scss";
+@import "./mall/password.scss";
+@import "./mall/subscribView.scss";
+@import "./mall/subscribOrder.scss";
+

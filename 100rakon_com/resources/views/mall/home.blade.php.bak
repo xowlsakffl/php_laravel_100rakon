@@ -1,0 +1,83 @@
+@extends('layouts.mall')
+@section('content')
+    <div id="mall_home">
+
+        <div class="home_slide">
+            <div class="slide">
+                <div class="bg"><img src="images/home_slide_bg2.png" width="100%" height="100%" /></div>
+                <div class="description">
+                    <span>백락(百樂)온(ON)</span> 은<br/>
+                    천연이거나 친환경인 먹거리와 각종 용품들을<br/>
+                    발굴하여 생활속에서 다양하게 즐길 수 있도록<br/>
+                    제공하는 것을 목표로 합니다.
+                </div>
+            </div>
+        </div>
+
+        <div class="home_body">
+            <div class="image">
+                <img src="images/home_body_water.png" />
+            </div>
+            <div class="explain">
+                <div class="title">
+                    <img src="images/home_body_title.svg" />
+                </div>
+                <div class="home_sub_title">
+                    | 해양심층수 생수
+                </div>
+                <div class="text">
+                    수심 200m 이하의 깊은 바닷속 해수를 ‘해양심층수’라고 합니다. 햇빛이 도달하지 않는 심해에 존재하기 때문에 깨끗하며,<br/>
+                    인체에 필수 요소인 ’천연미네랄’이 풍부한 청정한 해수 입니다. 해양심층수 속 미네랄 밸런스는 (Mg : Ca : K = 3 : 1 : 1)<br/>
+                    사람의 체액과 비슷하여, 흡수가 빠르다는 특징을 가지고 있습니다.<br/>
+                    <br/>
+                    해양심층수는 미국, 일본, 대만, 노르웨이 그리고 대한민국 이렇게 5개 국가만이 취수가 가능한 천혜의 청정 자원 입니다.<br/>
+                    그 중 대한민국의 동해는 세계 해양학계가 ‘동해야 말로 천혜의 심층수 해역’ 이라고 인정할 만큼 청정성과 수질에 있어<br/>
+                    탁월합니다.
+                </div>
+            </div>
+        </div>
+
+        <div class="home_list">
+            <div class="bg"></div>
+            <div class="title">
+                BEST ITEM
+                <div class="subscrib_btn"><div><button type="button" onClick="gen.redirect('/subscrib')">정기배송구독</button></div></div>
+            </div>
+            <div class="item_panel">
+                <div class="arrow"><img src="images/home_arrow_left.png"/></div>
+
+                <!-- 아이템1 -->
+                <div class="item">
+                    <div class="thumbnail cPointer" onClick="gen.redirect('/product/1');"><img src="<?=Storage::url('public/product1.png')?>"/></div>
+                    <div class="name_line">사랑해 500ml x 20개</div>
+                    <div class="price_line">
+                        <div class="normals">20,000</div>
+                        <div class="discount">15,000</div>
+                        <div class="won">원</div>
+                    </div>
+                    <div class="delivery_line"><img src="images/btn_free_delivery.png"/></div>
+                </div>
+
+                <!-- 아이템2 -->
+                <div class="item">
+                    <div class="thumbnail cPointer" onClick="gen.redirect('/product/2');"><img src="<?=Storage::url('public/product2.png')?>"/></div>
+                    <div class="name_line">사랑해 2L x 12개</div>
+                    <div class="price_line">
+                        <div class="normals">30,000</div>
+                        <div class="discount">25,000</div>
+                        <div class="won">원</div>
+                    </div>
+                    <div class="delivery_line"><img src="images/btn_free_delivery.png"/></div>
+                </div>
+
+                <!-- 아이템3 -->
+                {{-- <div class="item">
+                    <div class="coming_soon"><img src="images/cover_text_coming_soon.png"/></div>
+                </div> --}}
+
+                <div class="arrow"><img src="images/home_arrow_right.png"/></div>
+            </div>
+        </div>
+
+    </div>
+@endsection

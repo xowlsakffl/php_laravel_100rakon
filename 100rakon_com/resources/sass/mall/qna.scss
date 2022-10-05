@@ -1,0 +1,298 @@
+// MALL BASKET
+@media screen and (min-width: 1280px) /* PC */
+{
+    #mall_qna
+    {
+        width: 1280px;
+        margin: auto;
+        padding-top: 233px;
+
+        .title
+        {
+            display: flex;
+            align-items: center;
+            padding: 60px 0px 70px 0px;
+            .square
+            {
+                width: 5px;
+                height: 40px;
+                margin-right: 15px;
+                background: #3c644c;
+            }
+            .text
+            {
+                font-size: 28px;
+                color: #404040;
+            }
+        }
+
+        .order_info
+        {
+            > div
+            {
+                display: flex;
+                padding: 15px 30px;
+                border-bottom: 1px solid #C7C7C7;
+                &:nth-child(1)
+                {
+                    border-top: 1px solid #C7C7C7;
+                }
+
+                .rect::before{
+                    content:'';
+                    display: inline-block;
+                    margin-bottom: 3px;
+                    margin-right: 8px;
+                    width: 5px;
+                    height: 5px;
+                    background-color: #8098b1;
+                }
+                .label
+                {
+                    width: 220px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #545454;
+                }
+                .content
+                {
+                    display: flex;
+                    align-items: center;
+                    width: 1060px;
+                }
+                label
+                {
+                    margin-right: 50px;
+                }
+                textarea
+                {
+                    width: 100%;
+                    height: 200px;
+                }
+            }
+        }
+
+        .decesion
+        {
+            margin: 20px 0px 50px 0px;
+            text-align: right;
+
+            button
+            {
+                font-size: 16px;
+                color: #FFFFFF;
+                background: #2d2d2d;
+                border-radius: 0px;
+                text-align: center;
+            }
+        }
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1279px) /* TABLET */
+{
+    #mall_qna
+    {
+        width: 100%;
+        margin: auto;
+        padding-top: 150px;
+
+        .title
+        {
+            display: flex;
+            align-items: center;
+            margin: 0px 20px 0px 20px;
+            padding: 0px 0px 70px 0px;
+            .square
+            {
+                width: 5px;
+                height: 40px;
+                margin-right: 15px;
+                background: #3c644c;
+            }
+            .text
+            {
+                font-size: 28px;
+                color: #404040;
+            }
+        }
+        .order_info
+        {
+            zoom: 0.9;
+            > div
+            {
+                display: flex;
+                margin: 0px 20px 0px 20px;
+                padding: 15px 30px;
+                border-bottom: 1px solid #C7C7C7;
+                &:nth-child(1)
+                {
+                    border-top: 1px solid #C7C7C7;
+                }
+
+                .rect::before{
+                    content:'';
+                    display: inline-block;
+                    margin-bottom: 3px;
+                    margin-right: 8px;
+                    width: 5px;
+                    height: 5px;
+                    background-color: #8098b1;
+                }
+                .label
+                {
+                    width: 220px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #545454;
+                }
+                .content
+                {
+                    display: flex;
+                    align-items: center;
+                    width: 1060px;
+                }
+                textarea
+                {
+                    width: 100%;
+                    height: 200px;
+                }
+            }
+        }
+        .decesion
+        {
+            margin: 20px 20px 50px 20px;
+            text-align: right;
+
+            button
+            {
+                font-size: 16px;
+                color: #FFFFFF;
+                background: #2d2d2d;
+                border-radius: 0px;
+                text-align: center;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) /* MOBILE */
+{
+    #mall_qna
+    {
+        .title
+        {
+            display: flex;
+            align-items: center;
+            margin: 0px 15px 0px 15px;
+            padding: 30px 0px 30px 0px;
+            border-bottom: 1px solid #C7C7C7;
+            .square
+            {
+                width: 5px;
+                height: 40px;
+                margin-right: 15px;
+                background: #3c644c;
+            }
+            .text
+            {
+                font-size: 28px;
+                color: #404040;
+            }
+        }
+
+        .decesion
+        {
+            margin: 20px 15px 100px 15px;
+
+            .total_amount
+            {
+                width: 100%;
+                margin-bottom: 10px;
+                font-size: 24px;
+                font-weight: bold;
+                color: #404040;
+                text-align: center;
+            }
+
+            button
+            {
+                width: 100%;
+                padding: 0px;
+                font-size: 16px;
+                color: #FFFFFF;
+                background: #2d2d2d;
+                border-radius: 0px;
+                text-align: center;
+            }
+        }
+
+        .order_info
+        {
+            > div
+            {
+                margin: 0px 15px 0px 15px;
+                padding: 10px 0px;
+                border-bottom: 1px solid #C7C7C7;
+
+                .rect::before{
+                    content:'';
+                    display: inline-block;
+                    margin-bottom: 3px;
+                    margin-right: 8px;
+                    width: 5px;
+                    height: 5px;
+                    background-color: #8098b1;
+                }
+                .label
+                {
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #545454;
+                }
+                .content
+                {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                }
+                .address
+                {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    div
+                    {
+                        display: flex;
+                    }
+                }
+                label
+                {
+                    zoom: 0.80;
+                    margin-right: 15px;
+                }
+                textarea
+                {
+                    width: 100%;
+                    height: 200px;
+                }
+            }
+        }
+
+        .inline_btn
+        {
+            height:39px;
+            margin-left: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 14px;
+            color: #FFFFFF;
+            background: #262626;
+            border: none;
+            cursor: pointer;
+            &:hover
+            {
+                opacity: 0.8;
+            }
+        }
+    }
+}

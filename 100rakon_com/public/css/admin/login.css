@@ -1,0 +1,166 @@
+.login_page .login_box{
+    position: relative;
+    margin:0 auto;
+    background:#fff;
+    border-radius: 15px;
+    box-sizing: border-box
+}
+.login_page .login_box .back{
+    position: absolute;
+    top: -50px;
+    left:50%;
+    transform: translateX(-50%);
+}
+.login_page .login_box .back a{
+    color:#333;
+    font-weight: bold;
+} 
+.login_page .login_box h3{
+    margin-bottom: 45px;
+    text-align: center;
+    font-size:28px;
+    font-weight:500;
+}
+.login_page .login_box .input_control:nth-child(2){
+    margin-bottom: 20px;
+}
+.login_page .login_box .input_control{
+    display: block;
+    margin-bottom: 20px;
+}
+.login_page .login_box .input_control label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.login_page .login_box .input_control div{
+    display: flex;
+    align-items: center;
+}
+.login_page .login_box .input_control div input{
+    height:45px;
+    color: #4b5563;
+    padding:0 10px;
+    width: 100%;
+    background-color: #f9fafb;
+    border: 1px solid #d1d5db;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    box-shadow: inset 0 1px 2px rgb(46 54 80 / 8%);
+}
+.login_page .login_box .input_control div input:focus{
+    outline: none;
+}
+.login_page .login_box .input_control div .input_icon{
+    height: 45px;
+    width: 60px;
+    text-align: center;
+    border: 1px solid #d1d5db;
+    background-color: #f3f4f6;
+    border-right: none;
+    box-shadow: inset 0 1px 2px rgb(46 54 80 / 8%);
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.login_page .login_box .input_control div .input_icon i{
+    color: #4b5563;
+    line-height: 45px;
+}
+.login_page .login_box .input_control p{
+    margin-bottom: 0;
+}
+.login_page .login_box .login_option .option_left{
+    float: left;
+    display: flex;
+    align-items: center;
+}
+.login_page .login_box .login_option .option_left input{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.login_page .login_box .login_option .option_right{
+    float: right;
+}
+.login_page .login_box .login_btn {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.login_page .login_box .login_btn button{
+    display: block;
+    width: 100%;
+    color:#fff;
+    height: 45px;
+    line-height: 45px;
+    background-color: #262b40;
+    font-weight: 500;
+    border-radius: 15px;
+}
+.login_page .input_control{
+    position: relative;
+}
+.alert_text{
+    position: absolute;
+    top: 76px;
+    right: 0;
+}
+.alert_text strong{
+    padding-top: 8px;
+    color:#ca1919;
+    font-size: 13px;
+}
+@media screen and (min-width:1300px){
+    .login_page{
+        width:100%;
+        background:#f9fafb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .login_page .login_box{
+        width:500px;
+        padding:60px 60px;
+        border:1px solid #d1d5db;
+        box-shadow: 0 2px 5px rgba(140,152,164,.2)!important;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1299px){
+    .login_page{
+        width:100%;
+        background:#f9fafb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .login_page .login_box{
+        width:500px;
+        padding:60px 60px;
+        border:1px solid #d1d5db;
+        box-shadow: 0 2px 5px rgba(140,152,164,.2)!important;
+    }
+}
+
+@media screen and (max-width:767px){
+    .login_page{
+        padding-top: 100px;
+        width:100%;
+        background:#fff;
+    }
+
+    .login_page .login_box{
+        max-width: 500px;
+        width:100%;
+        padding:0 10px;
+    }
+    
+}

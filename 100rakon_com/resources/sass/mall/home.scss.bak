@@ -1,0 +1,599 @@
+// MALL MAIN
+@media screen and (min-width: 1280px) /* PC */
+{
+    #mall_home
+    {
+        .home_slide
+        {
+            width: 100%;
+            height: 470px;
+            background: #EEEEEE;
+            .slide
+            {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                border: 0px solid gold;
+                .bg
+                {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    border: 0px solid red;
+                }
+                .description
+                {
+                    position: absolute;
+                    top: 50px;
+                    right: 17%;
+                    width: 500px;
+                    height: 375px;
+                    padding: 80px 40px;
+                    font-size: 22px;
+                    line-height: 2.4;
+                    background: #FFFFFF;
+                    span
+                    {
+                        font-size: 35px;
+                        font-weight: bold;
+                        color: #416444;
+                    }
+                }
+            }
+        }
+
+        .home_body
+        {
+            display: flex;
+            width: 1280px;
+            margin: auto;
+            padding: 85px 0px 85px 0px;
+            .image
+            {
+                padding: 67px 50px 50px 0px;
+                img { width: 380px; height: 200px; }
+            }
+            .explain
+            {
+                .title
+                {
+                    img { width: 615px; height: 40px; }
+                }
+                .sub_title
+                {
+                    padding-top: 10px;
+                    font-size: 20px;
+                    color: #575757;
+                }
+                .text
+                {
+                    padding-top: 15px;
+                    color: #717171;
+                }
+            }
+        }
+
+        .home_list
+        {
+            position: relative;
+            width: 100%;
+            border-top: 1px solid #FFFFFF;
+            .bg
+            {
+                position: absolute;
+                top: 0px;
+                width: 100%;
+                height: 385px;
+                background: #F3F3F3;
+            }
+            .subscrib_btn
+            {
+                position: absolute;
+                width: 100%;
+                top: -8px;
+                border: 0px solid red;
+                div
+                {
+                    width: 1200px;
+                    margin: 0 auto;
+                    text-align: right;
+                    border: 0px solid orange;
+                }
+                button
+                {
+                    font-size: 18px;
+                }
+            }
+            .title
+            {
+                position: relative;
+                margin-top: 150px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 30px;
+                color: #404040;
+                text-align: center;
+            }
+            .item_panel
+            {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                width: 1280px;
+                margin: auto;
+                padding: 35px 0px 65px 0px;
+                .arrow
+                {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 45px;
+                    height: 300px;
+                    div
+                    {
+                        height: 90px;
+                    }
+                }
+                .item
+                {
+                    width: 315px;
+                    .thumbnail
+                    {
+                        width: 315px;
+                        height: 315px;
+                        border: 1px solid #dedede;
+                        img
+                        {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .name_line
+                    {
+                        margin: 15px 0px 5px 0px;
+                        font-size: 14px;
+                        color: #8f8f8f;
+                        text-align: center;
+                    }
+                    .price_line
+                    {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .normals
+                        {
+                            margin: 0px 6px 0px 0px;
+                            font-family: 'Roboto';
+                            font-size: 12px;
+                            text-decoration: line-through;
+                        }
+                        .discount
+                        {
+                            font-family: 'Roboto';
+                            font-size: 24px;
+                            font-weight: bold;
+                        }
+                        .won
+                        {
+                            margin: 0px 0px 0px 2px;
+                            font-size: 15px;
+                            color: #858585;
+                        }
+                    }
+                    .delivery_line
+                    {
+                        margin: 3px 0px 0px 0px;
+                        text-align: center;
+                        img { height: 24px; }
+                    }
+                    .coming_soon
+                    {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 315px;
+                        height: 315px;
+                        background: #000000;
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1279px) /* TABLET */
+{
+    #mall_home
+    {
+        .home_slide
+        {
+            width: 100%;
+            height: 320px;
+            background: #EEEEEE;
+            .slide
+            {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                border: 0px solid gold;
+                .bg
+                {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    border: 0px solid red;
+                }
+                .description
+                {
+                    zoom: 0.7;
+                    position: absolute;
+                    top: 80px;
+                    right: 10%;
+                    width: 500px;
+                    padding: 40px 40px;
+                    font-size: 22px;
+                    line-height: 2.4;
+                    background: #FFFFFF;
+                    span
+                    {
+                        font-size: 35px;
+                        font-weight: bold;
+                        color: #416444;
+                    }
+                }
+            }
+        }
+
+        .home_body
+        {
+            display: flex;
+            width: 100%;
+            margin: auto;
+            padding: 85px 30px 85px 30px;
+            .image
+            {
+                zoom: 0.8;
+                padding: 67px 50px 50px 0px;
+                img { width: 380px; height: 200px; }
+            }
+            .explain
+            {
+                .title
+                {
+                    img { width: 80%; height: 40px; }
+                }
+                .home_sub_title
+                {
+                    padding-top: 10px;
+                    font-size: 20px;
+                    color: #575757;
+                }
+                .text
+                {
+                    padding-top: 15px;
+                    color: #717171;
+                }
+            }
+        }
+
+        .home_list
+        {
+            position: relative;
+            width: 100%;
+            border-top: 1px solid #FFFFFF;
+            .bg
+            {
+                position: absolute;
+                top: 0px;
+                width: 100%;
+                height: 385px;
+                background: #F3F3F3;
+            }
+            .subscrib_btn
+            {
+                position: absolute;
+                width: 100%;
+                top: -8px;
+                border: 0px solid red;
+                div
+                {
+                    width: 100%;
+                    margin: 0 auto;
+                    text-align: right;
+                    border: 0px solid orange;
+                }
+                button
+                {
+                    margin-right: 20px;
+                    font-size: 18px;
+                }
+            }
+            .title
+            {
+                position: relative;
+                margin-top: 150px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 30px;
+                color: #404040;
+                text-align: center;
+            }
+            .item_panel
+            {
+                zoom: 0.8;
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                margin: auto;
+                padding: 35px 20px 65px 20px;
+                .arrow
+                {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 45px;
+                    height: 300px;
+                    div
+                    {
+                        height: 90px;
+                    }
+                }
+                .item
+                {
+                    width: 315px;
+                    .thumbnail
+                    {
+                        width: 315px;
+                        height: 315px;
+                        border: 1px solid #dedede;
+                        img
+                        {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .name_line
+                    {
+                        margin: 15px 0px 5px 0px;
+                        font-size: 14px;
+                        color: #8f8f8f;
+                        text-align: center;
+                    }
+                    .price_line
+                    {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .normals
+                        {
+                            margin: 0px 6px 0px 0px;
+                            font-family: 'Roboto';
+                            font-size: 12px;
+                            text-decoration: line-through;
+                        }
+                        .discount
+                        {
+                            font-family: 'Roboto';
+                            font-size: 24px;
+                            font-weight: bold;
+                        }
+                        .won
+                        {
+                            margin: 0px 0px 0px 2px;
+                            font-size: 15px;
+                            color: #858585;
+                        }
+                    }
+                    .delivery_line
+                    {
+                        margin: 3px 0px 0px 0px;
+                        text-align: center;
+                        img { height: 24px; }
+                    }
+                    .coming_soon
+                    {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 315px;
+                        height: 315px;
+                        background: #000000;
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) /* MOBILE */
+{
+    #mall_home
+    {
+        .home_slide
+        {
+            width: 100%;
+            height: 190px;
+            background: #EEEEEE;
+            .slide
+            {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                .bg
+                {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    img { height: 100%; }
+                }
+                .description
+                {
+                    zoom: 0.7;
+                    box-sizing: border-box;
+                    position: relative;
+                    top: 35px;
+                    left: 35px;
+                    width: 310px;
+                    padding: 20px 20px;
+                    font-size: 14px;
+                    line-height: 2.4;
+                    background: #FFFFFF;
+                    span
+                    {
+                        font-size: 20px;
+                        font-weight: bold;
+                        color: #416444;
+                    }
+                }
+            }
+        }
+
+        .home_body
+        {
+            width: 100%;
+            margin: auto;
+            padding: 25px 15px 25px 15px;
+            .image
+            {
+                width: 100%;
+                padding: 0px 0px 10px 0px;
+                img { width: 98%; }
+            }
+            .explain
+            {
+                width: 100%;
+                .title
+                {
+                    img { width: 100%; }
+                }
+                .home_sub_title
+                {
+                    padding-top: 10px;
+                    font-size: 20px;
+                    color: #575757;
+                }
+                .text
+                {
+                    padding-top: 15px;
+                    color: #717171;
+                }
+            }
+        }
+
+        .home_list
+        {
+            box-sizing: border-box;
+            position: relative;
+            width: 100%;
+            padding: 0px;
+            border-top: 1px solid #FFFFFF;
+            .bg
+            {
+                position: absolute;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                background: #F3F3F3;
+            }
+            .subscrib_btn
+            {
+                position: relative;
+                width: 100%;
+                border: 0px solid red;
+                div
+                {
+                    width: 100%;
+                    margin-top: 10px;
+                    text-align: center;
+                    border: 0px solid orange;
+                }
+                button
+                {
+                    font-size: 18px;
+                }
+            }
+            .title
+            {
+                position: relative;
+                margin-top: 50px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 30px;
+                color: #404040;
+                text-align: center;
+            }
+            .item_panel
+            {
+                position: relative;
+                width: 100%;
+                margin: auto;
+                padding: 35px 15px 65px 15px;
+                .arrow
+                {
+                    display: none;
+                }
+                .item
+                {
+                    width: 100%;
+                    margin: 0 auto;
+                    margin-bottom: 30px;
+                    .thumbnail
+                    {
+                        width: 100%;
+                        text-align: center;
+                        img
+                        {
+                            width: 80%;
+                        }
+                    }
+                    .name_line
+                    {
+                        margin: 15px 0px 5px 0px;
+                        font-size: 14px;
+                        color: #8f8f8f;
+                        text-align: center;
+                    }
+                    .price_line
+                    {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .normals
+                        {
+                            margin: 0px 6px 0px 0px;
+                            font-family: 'Roboto';
+                            font-size: 12px;
+                            text-decoration: line-through;
+                        }
+                        .discount
+                        {
+                            font-family: 'Roboto';
+                            font-size: 24px;
+                            font-weight: bold;
+                        }
+                        .won
+                        {
+                            margin: 0px 0px 0px 2px;
+                            font-size: 15px;
+                            color: #858585;
+                        }
+                    }
+                    .delivery_line
+                    {
+                        margin: 3px 0px 0px 0px;
+                        text-align: center;
+                        img { height: 24px; }
+                    }
+                    .coming_soon
+                    {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 315px;
+                        height: 315px;
+                        background: #000000;
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+}

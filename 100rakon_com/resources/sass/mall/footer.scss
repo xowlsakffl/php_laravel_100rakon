@@ -1,0 +1,242 @@
+// MALL FOOTER
+@media screen and (min-width: 1280px) /* PC */
+{
+    #mall_footer
+    {
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 60px 60px 60px;
+        background: #F9F9F9;
+        .footer_left
+        {
+            .logo
+            {
+                img
+                {
+                    margin: 0px 0px 0px 0px;
+                    width: 195px;
+                }
+            }
+            .copyright
+            {
+                margin: 0px;
+                padding: 0px 0px 0px 3px;
+                color: #AAAAAA;
+                font-size: 12px;
+            }
+            .cs
+            {
+                margin: 40px 0px 0px 0px;
+                color: #555555;
+                font-size: 20px;
+                a
+                {
+                    color: #555555;
+                    font-size: 20px;
+                };
+            }
+            .open
+            {
+                margin: 0px 0px 0px 0px;
+                color: #AAAAAA;
+                font-size: 14px;
+            }
+        }
+        .footer_right
+        {
+            margin: 0px 0px 0px 0px;
+            div
+            {
+                margin: 0px 0px 15px 0px;
+                text-align: right;
+                color: #AAAAAA;
+                font-size: 14px;
+                span
+                {
+                    padding: 0px 15px;
+                    color: #AAAAAA;
+                }
+            }
+            a
+            {
+                color: #758592;
+                font-size: 14px;
+            };
+        }
+    }
+
+    //퀵메뉴
+    .quickmenu
+    {
+        z-index: 2;
+        position: absolute;
+        right: 0px;
+        bottom: 50px;
+        div
+        {
+            font-size: 20px;
+            color: #FFFFFF;
+            cursor: pointer;
+            &:hover
+            {
+                background: #405845;
+            }
+            &:nth-child(1)
+            {
+                padding: 20px 20px 15px 20px;
+                background: #5c3838;
+            }
+            &:nth-child(2)
+            {
+                padding: 15px 20px 20px 20px;
+                background: #3a3e6d;
+            }
+        }
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1279px) /* TABLET */
+{
+    #mall_footer
+    {
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 60px 60px 60px;
+        background: #F9F9F9;
+        .footer_left
+        {
+            .logo
+            {
+                img
+                {
+                    margin: 0px 0px 0px 0px;
+                    width: 195px;
+                }
+            }
+            .copyright
+            {
+                margin: 0px;
+                padding: 0px 0px 0px 3px;
+                color: #AAAAAA;
+                font-size: 12px;
+            }
+            .cs
+            {
+                margin: 40px 0px 0px 0px;
+                color: #555555;
+                font-size: 20px;
+                a
+                {
+                    color: #555555;
+                    font-size: 20px;
+                };
+            }
+            .open
+            {
+                margin: 0px 0px 0px 0px;
+                color: #AAAAAA;
+                font-size: 14px;
+            }
+        }
+        .footer_right
+        {
+            margin: 0px 0px 0px 0px;
+            div
+            {
+                margin: 0px 0px 15px 0px;
+                text-align: right;
+                color: #AAAAAA;
+                font-size: 14px;
+                span
+                {
+                    padding: 0px 15px;
+                    color: #AAAAAA;
+                }
+            }
+            a
+            {
+                color: #758592;
+                font-size: 14px;
+            };
+        }
+    }
+
+    //퀵메뉴
+    .quickmenu
+    {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) /* MOBILE */
+{
+    #mall_footer
+    {
+        zoom: 0.6;
+        z-index: 1;
+        padding: 20px 20px 40px 20px;
+        background: #F9F9F9;
+        .footer_left
+        {
+            .logo
+            {
+                img
+                {
+                    margin: 0px 0px 0px 0px;
+                    width: 195px;
+                }
+            }
+            .copyright
+            {
+                margin: 0px;
+                padding: 0px 0px 0px 3px;
+                color: #AAAAAA;
+                font-size: 12px;
+            }
+            .cs
+            {
+                margin: 40px 0px 0px 0px;
+                color: #555555;
+                font-size: 20px;
+                a
+                {
+                    color: #555555;
+                    font-size: 20px;
+                };
+            }
+            .open
+            {
+                margin: 0px 0px 0px 0px;
+                color: #AAAAAA;
+                font-size: 14px;
+            }
+        }
+        .footer_right
+        {
+            margin: 40px 0px 40px 0px;
+            div
+            {
+                margin: 0px 0px 15px 0px;
+                color: #AAAAAA;
+                font-size: 14px;
+                a
+                {
+                    color: #758592;
+                    font-size: 14px;
+                };
+                span
+                {
+                    padding: 0px 15px;
+                    color: #AAAAAA;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    //퀵메뉴
+    .quickmenu
+    {
+        display: none;
+    }
+}

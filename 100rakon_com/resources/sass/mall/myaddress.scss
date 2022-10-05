@@ -1,0 +1,475 @@
+// MALL BASKET
+@media screen and (min-width: 1280px) /* PC */
+{
+    #mall_address
+    {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0px 20px;
+
+        .title_line
+        {
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 20px 0px;
+        }
+
+        .input_line
+        {
+            display: none;
+        }
+
+        .order_info
+        {
+            padding-bottom: 30px;
+            > div
+            {
+                display: flex;
+                padding: 7px 20px;
+                border-bottom: 1px solid #C7C7C7;
+                &:nth-child(1)
+                {
+                    border-top: 1px solid #C7C7C7;
+                }
+
+                .rect::before{
+                    content:'';
+                    display: inline-block;
+                    margin-bottom: 3px;
+                    margin-right: 8px;
+                    width: 5px;
+                    height: 5px;
+                    background-color: #8098b1;
+                }
+                .label
+                {
+                    width: 220px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #545454;
+                }
+                .content
+                {
+                    display: flex;
+                    align-items: center;
+                    width: 1060px;
+                }
+                .address
+                {
+                    display: flex;
+                    flex-direction: column;
+                    width: 1060px;
+                    div
+                    {
+                        display: flex;
+                    }
+                }
+                label
+                {
+                    margin-right: 50px;
+                }
+                input[name=address1], input[name=address2]
+                {
+                    width: 100%;
+                    margin-top: 10px;
+                }
+                input[name=msg]
+                {
+                    width: 100%;
+                }
+            }
+            .decesion
+            {
+                display: flex;
+                justify-content: flex-end;
+                border-bottom: none;
+                button
+                {
+                    font-size: 16px;
+                    margin-right: 10px;
+                    padding: 10px 25px;
+                }
+            }
+        }
+
+        .d_btn
+        {
+            height:39px;
+            margin-left: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 14px;
+            color: #FFFFFF;
+            background: #262626;
+            border: none;
+            cursor: pointer;
+            &:hover
+            {
+                opacity: 0.8;
+            }
+        }
+        .apply_btn
+        {
+            background: #485580;
+        }
+
+        .item
+        {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 10px 0px;
+            border-bottom: 1px solid #ACACAC;
+
+            .line
+            {
+                box-sizing: border-box;
+                width: 100%;
+                padding: 0px 0px;
+                display: flex;
+                align-items: center;
+                > *
+                {
+                    padding: 5px 20px 5px 0px;
+                    font-size: 16px;
+                }
+                .name
+                {
+                    font-size: 20px;
+                }
+            }
+            .menu
+            {
+                box-sizing: border-box;
+                width: 100%;
+                padding: 0px 0px 20px 0px;
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+        .item_top
+        {
+            border-top: 1px solid #ACACAC;
+        }
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1279px) /* TABLET */
+{
+    #mall_address
+    {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0px 20px;
+
+        .title_line
+        {
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 20px 0px;
+        }
+
+        .input_line
+        {
+            display: none;
+        }
+
+        .order_info
+        {
+            padding-bottom: 30px;
+            > div
+            {
+                display: flex;
+                padding: 7px 20px;
+                border-bottom: 1px solid #C7C7C7;
+                &:nth-child(1)
+                {
+                    border-top: 1px solid #C7C7C7;
+                }
+
+                .rect::before{
+                    content:'';
+                    display: inline-block;
+                    margin-bottom: 3px;
+                    margin-right: 8px;
+                    width: 5px;
+                    height: 5px;
+                    background-color: #8098b1;
+                }
+                .label
+                {
+                    width: 220px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #545454;
+                }
+                .content
+                {
+                    display: flex;
+                    align-items: center;
+                    width: 1060px;
+                }
+                .address
+                {
+                    display: flex;
+                    flex-direction: column;
+                    width: 1060px;
+                    div
+                    {
+                        display: flex;
+                    }
+                }
+                label
+                {
+                    margin-right: 50px;
+                }
+                input[name=address1], input[name=address2]
+                {
+                    width: 100%;
+                    margin-top: 10px;
+                }
+                input[name=msg]
+                {
+                    width: 100%;
+                }
+            }
+            .decesion
+            {
+                display: flex;
+                justify-content: flex-end;
+                border-bottom: none;
+                button
+                {
+                    font-size: 16px;
+                    margin-right: 10px;
+                    padding: 10px 25px;
+                }
+            }
+        }
+
+        .d_btn
+        {
+            height:39px;
+            margin-left: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 14px;
+            color: #FFFFFF;
+            background: #262626;
+            border: none;
+            cursor: pointer;
+            &:hover
+            {
+                opacity: 0.8;
+            }
+        }
+        .apply_btn
+        {
+            background: #485580;
+        }
+
+        .item
+        {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 10px 0px;
+            border-bottom: 1px solid #ACACAC;
+
+            .line
+            {
+                box-sizing: border-box;
+                width: 100%;
+                padding: 0px 0px;
+                display: flex;
+                align-items: center;
+                > *
+                {
+                    padding: 5px 20px 5px 0px;
+                    font-size: 16px;
+                }
+                .name
+                {
+                    font-size: 20px;
+                }
+            }
+            .menu
+            {
+                box-sizing: border-box;
+                width: 100%;
+                padding: 0px 0px 20px 0px;
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+        .item_top
+        {
+            border-top: 1px solid #ACACAC;
+        }
+    }
+}
+@media screen and (max-width: 768px) /* MOBILE */
+{
+    #mall_address
+    {
+        zoom: 0.75;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0px 20px;
+
+        .title_line
+        {
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 20px 0px;
+        }
+
+        // .sub_title
+        // {
+        //     font-size: 18px;
+        // }
+
+        .input_line
+        {
+            display: none;
+        }
+
+        .order_info
+        {
+            padding-bottom: 30px;
+            > div
+            {
+                display: flex;
+                padding: 7px 20px;
+                border-bottom: 1px solid #C7C7C7;
+                &:nth-child(1)
+                {
+                    border-top: 1px solid #C7C7C7;
+                }
+
+                .rect::before{
+                    content:'';
+                    display: inline-block;
+                    margin-bottom: 3px;
+                    margin-right: 8px;
+                    width: 5px;
+                    height: 5px;
+                    background-color: #8098b1;
+                }
+                .label
+                {
+                    width: 220px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #545454;
+                }
+                .content
+                {
+                    display: flex;
+                    align-items: center;
+                    width: 1060px;
+                }
+                .address
+                {
+                    display: flex;
+                    flex-direction: column;
+                    width: 1060px;
+                    div
+                    {
+                        display: flex;
+                    }
+                }
+                label
+                {
+                    margin-right: 50px;
+                }
+                input[name=address1], input[name=address2]
+                {
+                    width: 100%;
+                    margin-top: 10px;
+                }
+                input[name=msg]
+                {
+                    width: 100%;
+                }
+            }
+            .decesion
+            {
+                display: flex;
+                justify-content: flex-end;
+                border-bottom: none;
+                button
+                {
+                    font-size: 16px;
+                    margin-right: 10px;
+                    padding: 10px 25px;
+                }
+            }
+        }
+
+        .d_btn
+        {
+            height:39px;
+            margin-left: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 14px;
+            color: #FFFFFF;
+            background: #262626;
+            border: none;
+            cursor: pointer;
+            &:hover
+            {
+                opacity: 0.8;
+            }
+        }
+        .apply_btn
+        {
+            background: #485580;
+        }
+
+        .item
+        {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 10px 0px;
+            border-bottom: 1px solid #ACACAC;
+
+            .line
+            {
+                box-sizing: border-box;
+                width: 100%;
+                padding: 0px 0px;
+                display: flex;
+                align-items: center;
+                > *
+                {
+                    padding: 5px 20px 5px 0px;
+                    font-size: 16px;
+                }
+                .name
+                {
+                    font-size: 20px;
+                }
+            }
+            .menu
+            {
+                box-sizing: border-box;
+                width: 100%;
+                padding: 0px 0px 20px 0px;
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+        .item_top
+        {
+            border-top: 1px solid #ACACAC;
+        }
+    }
+}

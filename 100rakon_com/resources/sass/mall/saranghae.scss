@@ -1,0 +1,961 @@
+// MALL VIEW
+@media screen and (min-width: 1280px) /* PC */
+{
+    #mall_saranghae
+    {
+        padding-top: 133px;
+        *
+        {
+            font-family: 'KoPub Batang';
+        }
+        > div
+        {
+            position: relative;
+            box-sizing: border-box;
+            width: 100%;
+            &.bg0
+            {
+                background: #0E1A2A;
+            }
+            &.bg1
+            {
+                background: #F9F9F9;
+            }
+        }
+        .bg_img
+        {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            background: url('/images/home_p4_img1.png') center -133px no-repeat;
+        }
+        .panel
+        {
+            box-sizing: border-box;
+            align-items: center;
+            width: 1280px;
+            margin: auto;
+            padding: 0px 0px 0px 0px;
+
+            opacity: 0;
+            transition-duration:1.5s;
+        }
+        .show
+        {
+            opacity: 1;
+        }
+
+        .panel_1
+        {
+            position: relative;
+            padding: 200px 0px;
+            .text1{ margin-bottom: 15px; }
+            .text2{ color: #FFFFFF; font-size: 30px; font-weight: bold; }
+            .text3{ color: #FFFFFF; font-size: 110px; font-weight: bold; }
+            .img1{ position: absolute; right: 230px; top: 50px; }
+            .img2{ position: absolute; right: 100px; top: 50px; transform: rotate( 13deg ); img { width: 125%; } }
+            .img3
+            {
+                position: absolute;
+                left: 0px; bottom: -150px;
+                width: 1px; height: 200px;
+                background: #363636;
+                img { margin-left: -8px; margin-top: 220px; }
+            }
+        }
+
+        .panel_2
+        {
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            padding: 150px 0px;
+            .left
+            {
+                box-sizing: border-box;
+                width: 780px;
+                padding: 0px 150px 0px 120px;
+                .text1{     font-size: 64px;    }
+                .text1_1{     font-size: 30px;    }
+                .text1_2{     font-size: 110px;    }
+                .text2
+                {
+                    margin-top: 30px;
+                    font-size: 17px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    line-height: 2.5;
+                    * { font-family: 'Noto Sans KR', sans-serif; }
+                    span{ font-size: 20px; font-weight: bold; }
+                }
+            }
+            .img
+            {
+                flex-grow: 1;
+                img { width: 100%; }
+                // > div{ width: 100%; }
+            }
+        }
+
+        .panel_3
+        {
+            position: relative;
+            padding: 150px 0px 130px 0px;
+            .text1{ font-size: 20px; }
+            .text2{ font-size: 110px; margin-bottom: 20px; }
+            .items
+            {
+                box-sizing: border-box;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 100%;
+                *{
+                    font-family: 'Noto Sans KR', sans-serif;
+                }
+                .item
+                {
+                    box-sizing: border-box;
+                    width: 48%;
+                    height: 250px;
+                    margin-bottom: 20px;
+                    padding: 20px;
+                    font-size: 17px;
+                    line-height: 2.35;
+                    border: 1px solid #777777;
+                    border-radius: 20px;
+                    background: #FFFFFF;
+                    p
+                    {
+                        padding-bottom: 15px;
+                        font-size: 20px;
+                        font-weight: bold;
+                        span
+                        {
+                            font-size: 30px;
+                            font-weight: bold;
+                        }
+                    }
+                    &:nth-child(1){ background: #F9F9F9; }
+                    &:nth-child(4){ background: #F9F9F9; }
+                }
+            }
+            .text3
+            {
+                padding: 100px 0px 0px 0px;
+                .txt1
+                {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    color: #030056;
+                    font-size: 30px;
+                }
+                .txt2
+                {
+                    color: #292929;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-size: 17px;
+                    line-height: 2.7;
+                }
+            }
+        }
+
+        .panel_4
+        {
+            position: relative;
+            padding: 150px 0px 150px 0px;
+            .text1{ font-size: 20px; }
+            .text2{ font-size: 110px; }
+            .text3
+            {
+                margin-bottom: 30px;
+                font-size: 17px;
+                font-family: 'Noto Sans KR', sans-serif;
+                span
+                {
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+            .items
+            {
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                .item
+                {
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    padding: 30px;
+                    width: 23%;
+                    height: 490px;
+
+                    > div{  font-weight: bold; }
+                    .txt1{  font-size: 32px; text-align: right; margin-bottom: 0px;  }
+                    .txt2{  font-size: 18px; text-align: right;   }
+
+                    &:nth-child(1){ background: #F2F2F2; }
+                    &:nth-child(2){ background: url('/images/saranghae_p4_img2.png') no-repeat; }
+                    &:nth-child(3){ background: url('/images/saranghae_p4_img3.png') no-repeat; }
+                    &:nth-child(4){ background: url('/images/saranghae_p4_img4.png') no-repeat; }
+                }
+            }
+        }
+
+        .panel_5
+        {
+            box-sizing: border-box;
+            position: relative;
+            display: flex;
+            padding: 150px 0px 150px 0px;
+            .text1
+            {
+                width: 350px;
+                font-size: 80px;
+                letter-spacing: -1;
+            }
+            .bar
+            {
+                width: 1px;
+                height: 400px;
+                margin-left: 199px;
+                background: #383838;
+            }
+            .contents
+            {
+                flex-grow: 1;
+                display: flex;
+                align-items: flex-end;
+                height: 400px;
+                margin-left: 100px;
+                .txt1
+                {
+                    padding: 0px 50px 80px 0px;
+                    color: #363636;
+                    font-size: 60px;
+                }
+                .txt2
+                {
+                    padding: 0px 0px 50px 0px;
+                    color: #292929;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-size: 17px;
+                    line-height: 2.4;
+                }
+            }
+        }
+
+        .panel_6
+        {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            padding: 150px 0px;
+            .left
+            {
+                box-sizing: border-box;
+                width: 780px;
+                .text1
+                {
+                    font-size: 20px;
+                }
+                .text2
+                {
+                    font-size: 80px;
+                }
+                .bar
+                {
+                    width: 95%;
+                    height: 1px;
+                    margin: 0px 0px 30px 0px;
+                    background: #383838;
+                }
+                .item
+                {
+                    box-sizing: border-box;
+                    background: url('/images/saranghae_p6_img1.png') 10px top no-repeat;
+                    margin-bottom: 40px;
+                    padding: 7px 0px 0px 60px;
+                    * { font-family: 'Noto Sans KR', sans-serif; }
+                    .txt1
+                    {
+                        margin-bottom: 10px;
+                        font-size: 20px;
+                        span
+                        {
+                            font-size: 27px;
+                            font-weight: bold;
+                        }
+                    }
+                    .txt2
+                    {
+                        font-size: 17px;
+                        color: #888888;
+                        line-height: 1.8;
+                    }
+                }
+            }
+            .img
+            {
+                flex-grow: 1;
+                box-sizing: border-box;
+                width: 500px;
+                height: 800px;
+                padding: 0px 0px 0px 60px;
+                > div
+                {
+                    height: 100%;
+                    img
+                    {
+                        width: 100%; height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1279px) /* TABLET */
+{
+    #mall_saranghae
+    {
+        padding-top: 133px;
+        *
+        {
+            font-family: 'KoPub Batang';
+        }
+        > div
+        {
+            position: relative;
+            box-sizing: border-box;
+            width: 100%;
+            &.bg0
+            {
+                background: #0E1A2A;
+            }
+            &.bg1
+            {
+                background: #F9F9F9;
+            }
+        }
+        .bg_img
+        {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            background: url('/images/home_p4_img1.png') center -133px no-repeat;
+        }
+        .panel
+        {
+            box-sizing: border-box;
+            align-items: center;
+            width: 1280px;
+            margin: auto;
+            padding: 0px 0px 0px 0px;
+
+            opacity: 0;
+            transition-duration:1.5s;
+        }
+        .show
+        {
+            opacity: 1;
+        }
+
+        .panel_1
+        {
+            position: relative;
+            padding: 200px 0px;
+            .text1{ margin-bottom: 15px; }
+            .text2{ color: #FFFFFF; font-size: 30px; font-weight: bold; }
+            .text3{ color: #FFFFFF; font-size: 110px; font-weight: bold; }
+            .img1{ position: absolute; right: 230px; top: 50px; }
+            .img2{ position: absolute; right: 100px; top: 50px; transform: rotate( 13deg ); img { width: 125%; } }
+            .img3
+            {
+                position: absolute;
+                left: 0px; bottom: -150px;
+                width: 1px; height: 200px;
+                background: #363636;
+                img { margin-left: -8px; margin-top: 220px; }
+            }
+        }
+
+        .panel_2
+        {
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            padding: 150px 0px;
+            .left
+            {
+                box-sizing: border-box;
+                width: 780px;
+                padding: 0px 150px 0px 120px;
+                .text1{     font-size: 64px;    }
+                .text1_1{     font-size: 30px;    }
+                .text1_2{     font-size: 110px;    }
+                .text2
+                {
+                    margin-top: 30px;
+                    font-size: 17px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    line-height: 2.5;
+                    * { font-family: 'Noto Sans KR', sans-serif; }
+                    span{ font-size: 20px; font-weight: bold; }
+                }
+            }
+            .img
+            {
+                flex-grow: 1;
+                img { width: 100%; }
+                // > div{ width: 100%; }
+            }
+        }
+
+        .panel_3
+        {
+            position: relative;
+            padding: 150px 0px 130px 0px;
+            .text1{ font-size: 20px; }
+            .text2{ font-size: 110px; margin-bottom: 20px; }
+            .items
+            {
+                box-sizing: border-box;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 100%;
+                *{
+                    font-family: 'Noto Sans KR', sans-serif;
+                }
+                .item
+                {
+                    box-sizing: border-box;
+                    width: 48%;
+                    height: 250px;
+                    margin-bottom: 20px;
+                    padding: 20px;
+                    font-size: 17px;
+                    line-height: 2.35;
+                    border: 1px solid #777777;
+                    border-radius: 20px;
+                    background: #FFFFFF;
+                    p
+                    {
+                        padding-bottom: 15px;
+                        font-size: 20px;
+                        font-weight: bold;
+                        span
+                        {
+                            font-size: 30px;
+                            font-weight: bold;
+                        }
+                    }
+                    &:nth-child(1){ background: #F9F9F9; }
+                    &:nth-child(4){ background: #F9F9F9; }
+                }
+            }
+            .text3
+            {
+                padding: 100px 0px 0px 0px;
+                .txt1
+                {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    color: #030056;
+                    font-size: 30px;
+                }
+                .txt2
+                {
+                    color: #292929;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-size: 17px;
+                    line-height: 2.7;
+                }
+            }
+        }
+
+        .panel_4
+        {
+            position: relative;
+            padding: 150px 0px 150px 0px;
+            .text1{ font-size: 20px; }
+            .text2{ font-size: 110px; }
+            .text3
+            {
+                margin-bottom: 30px;
+                font-size: 17px;
+                font-family: 'Noto Sans KR', sans-serif;
+                span
+                {
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+            .items
+            {
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                .item
+                {
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    padding: 30px;
+                    width: 23%;
+                    height: 490px;
+
+                    > div{  font-weight: bold; }
+                    .txt1{  font-size: 32px; text-align: right; margin-bottom: 0px;  }
+                    .txt2{  font-size: 18px; text-align: right;   }
+
+                    &:nth-child(1){ background: #F2F2F2; }
+                    &:nth-child(2){ background: url('/images/saranghae_p4_img2.png') no-repeat; }
+                    &:nth-child(3){ background: url('/images/saranghae_p4_img3.png') no-repeat; }
+                    &:nth-child(4){ background: url('/images/saranghae_p4_img4.png') no-repeat; }
+                }
+            }
+        }
+
+        .panel_5
+        {
+            box-sizing: border-box;
+            position: relative;
+            display: flex;
+            padding: 150px 0px 150px 0px;
+            .text1
+            {
+                width: 350px;
+                font-size: 80px;
+                letter-spacing: -1;
+            }
+            .bar
+            {
+                width: 1px;
+                height: 400px;
+                margin-left: 199px;
+                background: #383838;
+            }
+            .contents
+            {
+                flex-grow: 1;
+                display: flex;
+                align-items: flex-end;
+                height: 400px;
+                margin-left: 100px;
+                .txt1
+                {
+                    padding: 0px 50px 80px 0px;
+                    color: #363636;
+                    font-size: 60px;
+                }
+                .txt2
+                {
+                    padding: 0px 0px 50px 0px;
+                    color: #292929;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-size: 17px;
+                    line-height: 2.4;
+                }
+            }
+        }
+
+        .panel_6
+        {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            padding: 150px 0px;
+            .left
+            {
+                box-sizing: border-box;
+                width: 780px;
+                .text1
+                {
+                    font-size: 20px;
+                }
+                .text2
+                {
+                    font-size: 80px;
+                }
+                .bar
+                {
+                    width: 95%;
+                    height: 1px;
+                    margin: 0px 0px 30px 0px;
+                    background: #383838;
+                }
+                .item
+                {
+                    box-sizing: border-box;
+                    background: url('/images/saranghae_p6_img1.png') 10px top no-repeat;
+                    margin-bottom: 40px;
+                    padding: 7px 0px 0px 60px;
+                    * { font-family: 'Noto Sans KR', sans-serif; }
+                    .txt1
+                    {
+                        margin-bottom: 10px;
+                        font-size: 20px;
+                        span
+                        {
+                            font-size: 27px;
+                            font-weight: bold;
+                        }
+                    }
+                    .txt2
+                    {
+                        font-size: 17px;
+                        color: #888888;
+                        line-height: 1.8;
+                    }
+                }
+            }
+            .img
+            {
+                flex-grow: 1;
+                box-sizing: border-box;
+                width: 500px;
+                height: 800px;
+                padding: 0px 0px 0px 60px;
+                > div
+                {
+                    height: 100%;
+                    img
+                    {
+                        width: 100%; height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) /* MOBILE */
+{
+    #mall_saranghae
+    {
+        // padding-top: 70px;
+        overflow: hidden;
+        * { font-family: 'KoPub Batang'; }
+        > div
+        {
+            position: relative;
+            box-sizing: border-box;
+            width: 100%;
+            &.bg0
+            {
+                background: #0E1A2A;
+            }
+            &.bg1
+            {
+                background: #F9F9F9;
+            }
+        }
+        .bg_img
+        {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            background: url('/images/home_p4_img1.png') center -133px no-repeat;
+        }
+        .panel
+        {
+            box-sizing: border-box;
+            align-items: center;
+            width: 100%;
+            margin: auto;
+
+            opacity: 0;
+            transition-duration:1.5s;
+        }
+        .show
+        {
+            opacity: 1;
+        }
+
+        .panel_1
+        {
+            position: relative;
+            width: 100%;
+            height: 700px;
+            padding: 50px 15px 100px 30px;
+            .text1
+            {
+                width: 80%;
+                img { height: 56px; }
+            }
+            .text2{ color: #FFFFFF; font-size: 18px; font-weight: bold; border: 0px solid red; }
+            .text3{ color: #FFFFFF; font-size: 48px; font-weight: bold; border: 0px solid red; }
+            .img1{ position: absolute; width: 120px; right: 40vw; bottom: 50px; img { width: 100%; } border: 0px solid red; }
+            .img2{ position: absolute; width: 120px; right: 20vw; bottom: 0px; transform: rotate( 13deg ); img { width: 125%; } border: 0px solid red; }
+            .img3
+            {
+                position: absolute;
+                left: 20px; bottom: -150px;
+                width: 1px; height: 200px;
+                background: #363636;
+                img { margin-left: -8px; margin-top: 220px; }
+            }
+        }
+
+        .panel_2
+        {
+            position: relative;
+            padding: 60px 15px;
+            .left
+            {
+                box-sizing: border-box;
+                width: 100%;
+                padding: 0px 0px 0px 30px;
+                .text1{     font-size: 40px;    }
+                .text1_1{     font-size: 20px;    }
+                .text1_2{     font-size: 48px;    }
+                .text2
+                {
+                    margin-top: 30px;
+                    font-size: 18px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    line-height: 2;
+                    * { font-family: 'Noto Sans KR', sans-serif; }
+                    span{ font-size: 22px; font-weight: bold; }
+                }
+            }
+            .img
+            {
+                flex-grow: 1;
+                margin-top: 30px;
+                > div
+                {
+                    width: 100%;
+                    img { width: 100%; }
+                }
+            }
+        }
+
+        .panel_3
+        {
+            position: relative;
+            padding: 60px 15px;
+            .text1{ font-size: 18px; }
+            .text2{ font-size: 48px; }
+            .items
+            {
+                box-sizing: border-box;
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                .item
+                {
+                    *{
+                        font-family: 'Noto Sans KR', sans-serif;
+                    }
+                    box-sizing: border-box;
+                    width: 100%;
+                    margin-bottom: 20px;
+                    padding: 20px;
+                    font-size: 17px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    line-height: 1.8;
+                    border: 1px solid #777777;
+                    border-radius: 20px;
+                    background: #FFFFFF;
+                    p
+                    {
+                        padding-bottom: 15px;
+                        font-size: 20px;
+                        font-weight: bold;
+                        span
+                        {
+                            font-size: 30px;
+                            font-weight: bold;
+                        }
+                    }
+                    &:nth-child(1){ background: #F9F9F9; }
+                    &:nth-child(3){ background: #F9F9F9; }
+                }
+            }
+            .text3
+            {
+                padding: 50px 0px 0px 0px;
+                .txt1
+                {
+                    zoom: 0.8;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    color: #030056;
+                    font-size: 28px;
+                    img { height: 28px; }
+                }
+                .txt2
+                {
+                    color: #292929;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-size: 17px;
+                    line-height: 1.8;
+                }
+            }
+        }
+
+        .panel_4
+        {
+            position: relative;
+            padding: 60px 15px 30px 15px;
+            .text1{ font-size: 18px; }
+            .text2{ font-size: 48px; }
+            .text3
+            {
+                margin-bottom: 30px;
+                font-size: 17px;
+                font-family: 'Noto Sans KR', sans-serif;
+                span
+                {
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+            .items
+            {
+                box-sizing: border-box;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                .item
+                {
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    margin-bottom: 30px;
+                    padding: 15px;
+                    width: 47%;
+                    height: 300px;
+                    background: #F2F2F2;
+
+                    > div{  font-weight: bold; }
+                    .txt1{  font-size: 22px; text-align: right; margin-bottom: 0px;  }
+                    .txt2{  font-size: 13px; text-align: right; letter-spacing: -2; }
+
+                    &:nth-child(1){ background: #F2F2F2; }
+                    &:nth-child(2){ background: url('/images/saranghae_p4_img2.png') no-repeat; }
+                    &:nth-child(3){ background: url('/images/saranghae_p4_img3.png') no-repeat; }
+                    &:nth-child(4){ background: url('/images/saranghae_p4_img4.png') no-repeat; }
+                }
+            }
+        }
+
+        .panel_5
+        {
+            box-sizing: border-box;
+            position: relative;
+            padding: 35px 15px 40px 15px;
+            .text1
+            {
+                width: 100%;
+                font-size: 48px;
+                letter-spacing: -1;
+                line-height: 1.2;
+            }
+            .bar
+            {
+                display: none;
+            }
+            .contents
+            {
+                width: 100%;
+                margin-top: 20px;
+                text-align: center;
+                border: 0px solid red;
+                .txt1
+                {
+                    padding: 0px 0px 0px 0px;
+                    color: #363636;
+                    font-size: 60px;
+                }
+                .txt2
+                {
+                    padding: 0px 0px 15px 0px;
+                    color: #292929;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-size: 17px;
+                    line-height: 2.4;
+                }
+            }
+        }
+
+        .panel_6
+        {
+            position: relative;
+            padding: 60px 15px;
+            .left
+            {
+                box-sizing: border-box;
+                width: 100%;
+                .text1
+                {
+                    font-size: 18px;
+                }
+                .text2
+                {
+                    font-size: 48px;
+                }
+                .bar
+                {
+                    width: 90%;
+                    height: 1px;
+                    margin: 0px 0px 30px 0px;
+                    background: #383838;
+                }
+                .item
+                {
+                    box-sizing: border-box;
+                    background: url('/images/saranghae_p6_img1.png') 10px top no-repeat;
+                    margin-bottom: 25px;
+                    padding: 7px 0px 0px 60px;
+                    * { font-family: 'Noto Sans KR', sans-serif; }
+                    .txt1
+                    {
+                        margin-bottom: 10px;
+                        font-size: 20px;
+                        span
+                        {
+                            font-size: 27px;
+                            font-weight: bold;
+                        }
+                    }
+                    .txt2
+                    {
+                        font-size: 17px;
+                        color: #888888;
+                        line-height: 1.8;
+                    }
+                }
+            }
+            .img
+            {
+                width: 100%; height: 400px;
+                > div
+                {
+                    width: 100%; height: 100%;
+                    overflow: hidden;
+                    img { width: 100%; }
+                }
+            }
+        }
+    }
+}

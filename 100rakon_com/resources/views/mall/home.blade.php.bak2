@@ -1,0 +1,172 @@
+@extends('layouts.mall')
+@section('content')
+    <div id="mall_home">
+
+        <div class="home_slide1">
+            <div class="content_panel">
+                <div class="bg"><video src="images/movie1.mp4" loop muted autoplay playsinline type='video/mp4'></video></div>
+                <div class="cover"></div>
+                <div class="description">
+                    <div class="text1">百 樂<br/>伯 樂</div>
+                    <div class="bar"><div></div></div>
+                    <div class="text2">
+                        백락(百樂)온(ON)은 ‘백락(伯樂)’을 시작으로 그 의미를 하나씩 담아갑니다.<br/>
+                        백락이 명마를 고르듯, 뛰어난 제품을 먼저 알아보고 선보입니다.<br/>
+                        伯은 百(100)으로, 즐거움은 그대로, 고객들의 100가지 행복(樂)이 시작되는 곳(ON)이 백락온입니다.
+                    </div>
+                    <div class="text3"><div onClick="gen.redirect('/intro');">View More</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll_guide">
+            <div><img src="/images/home_scroll.png" /></div>
+            <div><img src="/images/home_vertical_bar.png" /></div>
+            <div><img src="/images/home_text_brand.png" /></div>
+        </div>
+        <div class="home_slide4">
+            <div class="content_panel">
+                <div class="img2"><img src="/images/home_p4_img2.png" /></div>
+                <div class="text">
+                    <div class="txt1"><img src="/images/home_p4_txt1.png" /></div>
+                    <div class="txt2"><img src="/images/home_p4_txt2.png" /></div>
+                    <div class="txt3"><div onClick="gen.redirect('/saranghae');">View More</div></div>
+                    <div class="txt4">| 먹는 해양심층수 사랑해 골드</div>
+                    <div class="txt5">
+                        대한민국 동해안에서 7.3km 떨어진 먼 바다에 햇빛이 통과되지 않는 수심 500m 이하의
+                        ‘해양심층수 벨트’에서 취수합니다. 인공 미네랄 성분을 첨가하지 않고 천연 미네랄 함량을
+                        조절하는 기술로 프리미엄 미네랄 300의 물을 생산하고 있습니다.
+                        인체에 꼭 필요한 60여종의 주요∙미량의 천연 미네랄이 아주 풍부하며,
+                        특히 마그네슘의 함량이 칼슘보다도 많고 다른 생수보다 월등히 높다는 것과 미네랄 조성이
+                        혈액이나 양수 등의  체액과 거의 유사한 밸런스를 가진다는 것이 사랑해 골드의 특징입니다.
+                    </div>
+                </div>
+            </div>
+            <div class="panel_bg"></div>
+        </div>
+
+        {{-- <div class="home_slide2">
+            <div class="content_panel">
+                <div class="images">
+                    <div class="sea"><img src="/images/home_sea.png" /></div>
+                    <div class="text1"><img src="/images/home_text1.png" /></div>
+                    <div class="text2"><img src="/images/home_text2.png" /></div>
+                </div>
+                <div class="text">
+                    <div class="txt1">| 해양심층수 생수</div>
+                    <div class="txt2">
+                        대한민국 동해안에서 7.3km 떨어진 먼 바다에 햇빛이 통과되지 않는 수심
+                        500m 이하의 ‘해양심층수 벨트’에서 취수합니다. 인공 미네랄 성분을 첨가
+                        하지 않고 천연 미네랄 함량을 조절하는 기술로 프리미엄 미네랄 300의 물을
+                        생산하고 있습니다. 인체에 꼭 필요한 60여종의 주요∙미량의 천연 미네랄이
+                        아주 풍부하며, 특히 마그네슘의 함량이 칼슘보다도 많고 다른 생수보다 월등히
+                        높다는 것과 미네랄 조성이 혈액이나 양수 등의  체액과 거의 유사한 밸런스를
+                        가진다는 것이 특징입니다.
+                    </div>
+                </div>
+            </div>
+        </div> --}}
+
+        <div class="home_slide3">
+            <div class="bg_green"></div>
+            <div class="content_panel">
+                <div class="explain">
+                    <div class="txt1">베스트셀러</div>
+                    <div class="txt2">백락이 명마를 고르듯 MD가 엄선한 인기 제품들을 만나보세요!</div>
+                </div>
+
+                <div class="item_panel">
+                    <div class="arrow"><!--img src="images/home_arrow_left.png"/--></div>
+
+                    <!-- 아이템1 -->
+                    <div class="item">
+                        <div class="thumbnail cPointer" onClick="gen.redirect('/product/1');"><img src="/images/home_item1.png"/></div>
+                        <div class="name_line">사랑해 500ml x 40개</div>
+                        <div class="price_line">
+                            <div class="discount">48,000</div>
+                            <div class="won">원</div>
+                        </div>
+                        <div class="delivery_line"><img src="images/btn_free_delivery.png"/></div>
+                    </div>
+
+                    <!-- 아이템2 -->
+                    <div class="item">
+                        <div class="thumbnail cPointer" onClick="gen.redirect('/product/2');"><img src="/images/home_item2.png"/></div>
+                        <div class="name_line">사랑해 2L x 12개</div>
+                        <div class="price_line">
+                            <div class="discount">31,200</div>
+                            <div class="won">원</div>
+                        </div>
+                        <div class="delivery_line"><img src="images/btn_free_delivery.png"/></div>
+                    </div>
+
+                    <!-- 아이템3 -->
+                    <div class="item">
+                        <!--div class="thumbnail cPointer" onClick="gen.redirect('/subscrib/7');"><img src="<?=Storage::url('public/products/2112281333331640666013072hPW6A3llT3JMElwsoReO.png')?>"/></div-->
+                        <div class="thumbnail cPointer" onClick="gen.redirect('/subscrib');"><img src="/images/home_item3.png"/></div>
+                        <div class="name_line">할인 정기배송</div>
+                    </div>
+
+                    <!-- 아이템3 -->
+                    {{-- <div class="item">
+                        <div class="coming_soon"><img src="images/cover_text_coming_soon.png"/></div>
+                    </div> --}}
+
+                    <div class="arrow"><!--img src="images/home_arrow_right.png"/--></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<script>
+// 가로 너비에 따라서 크기를 바꿈
+let winWidth = $('body').width();
+let winHeight = $(window).height();
+
+//화면 가로가 1920 보다 작아지면 높이를 기준으로 비디오 전환
+if(winWidth >= 1920)
+{
+    $('.home_slide1 video').css('width', '110%');
+}else{
+    $('.home_slide1 video').css('height', '110%');
+}
+//모바일일 때
+if(winWidth < 769)
+{
+    $('#mall_header_mobile_back_block').css('display', 'none');
+}
+$(document).ready(function()
+{
+    //태블릿 모드일 때
+    if( (winWidth > 768) && (winWidth < 1280) )
+    {
+        //세로가 가로보다 길 때
+        if( winWidth > winHeight )
+        {
+            let showRate = (winHeight/1080);
+            $('body .home_slide1').css('zoom', showRate);
+            $('body .home_slide2').css('zoom', showRate);
+            $('body .home_slide3').css('zoom', showRate);
+            $('body .home_slide4').css('zoom', showRate);
+        }else{
+            let showRate = (winWidth/1920)*1.4;
+            $('body .home_slide1').css('zoom', showRate);
+            $('body .home_slide2').css('zoom', showRate);
+            $('body .home_slide3').css('zoom', showRate);
+            $('body .home_slide4').css('zoom', showRate);
+        }
+    }
+
+    //로딩 후 애니메이션
+    $("#mall_home").animate({'opacity': 1}, 1200, function()
+    {
+        $('.home_slide1 .description .text1').addClass('animate');
+        $('.home_slide1 .description .bar').addClass('animate');
+        $('.home_slide1 .description .text2').addClass('animate');
+        $('.home_slide1 .description .text3').addClass('animate');
+    })
+});
+
+
+
+</script>
+@endsection
