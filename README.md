@@ -8,18 +8,22 @@
 ## 사용 스택 ⚒️
 
 ### 백엔드
-Laravel 6<br>
-postgresql<br>
-Laravel 내장 인증<br>
-composer<br>
-linux<br>
-aws
+<ul>
+  <li>Laravel 6</li>
+  <li>postgresql</li>
+  <li>Laravel 내장 인증</li>
+  <li>composer</li>
+  <li>linux</li>
+  <li>aws</li>
+</ul>
 
 ### 프론트엔드
-jquery<br>
-javascript<br>
-Laravel mix<br>
-npm
+<ul>
+  <li>jquery</li>
+  <li>javascript</li>
+  <li>Laravel mix</li>
+  <li>npm</li>
+</ul>
 
 
 ## 소요기간 ⏱️
