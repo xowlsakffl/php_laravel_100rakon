@@ -1,4 +1,4 @@
-# 100rakon 쇼핑몰
+# 백락온 쇼핑몰
 
 ![100rakon 쇼핑몰 화면](https://user-images.githubusercontent.com/50791439/194876606-79a5b9c2-52ae-4b3b-ba15-ee29a8bb3155.PNG)
 
