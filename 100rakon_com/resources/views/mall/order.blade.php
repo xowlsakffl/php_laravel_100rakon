@@ -1,7 +1,7 @@
 @extends('layouts.mall')
 @section('content')
 <script>
-    var clientKey = '{{ env("TOSS_CLIENT_KEY") }}';
+    var clientKey = '{{ config("services.toss.client_key") }}';
     var tossPayments = TossPayments(clientKey) // 클라이언트 키로 초기화하기
 </script>
 <div id="mall_order">
@@ -174,7 +174,7 @@
         <div class="show_pay_kind_cash">
             <div class="label rect">입금처</div>
             <div class="content">
-                하나은행 &nbsp;176-910036-83704 &nbsp;(예금주 : ㈜백락온)
+                {{ config('services.shop.bank_account_text') }}
             </div>
         </div>
     </div>
@@ -258,8 +258,8 @@ function check_submit()
                     orderId: result.order_info.order_number,
                     orderName: result.order_info.pay_name + ' ' + result.order_info.pay_tel,
                     customerName: result.order_info.order_name,
-                    successUrl: '{{ env('APP_URL') }}/toss/pay-toss-success',
-                    failUrl: '{{ env('APP_URL') }}/toss/pay-toss-fail',
+                    successUrl: '{{ config('app.url') }}/toss/pay-toss-success',
+                    failUrl: '{{ config('app.url') }}/toss/pay-toss-fail',
                 })
             }
         }else{

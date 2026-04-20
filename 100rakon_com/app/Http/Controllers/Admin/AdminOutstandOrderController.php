@@ -128,15 +128,14 @@ class AdminOutstandOrderController extends Controller
 
             if($request['state'] == 9){
                 $params =   [
-                        'user_id' => '100rakon',
-                        'key' => '5vfdzjv49p6auyo8tt4p04umiuf9cdk0',
+                        'user_id' => config('services.aligo.user_id'),
+                        'key' => config('services.aligo.api_key'),
                         'msg' => '백락온 입금완료알림 - 주문확인방법 https://100rakon.com/myorder-outstand',
-                        'receiver' => $data['pay_tel'].",010-7182-7669",
-                        'sender' => '02-6288-6350',
-                        // 'sender' => '010-7182-7669',
+                        'receiver' => trim($data['pay_tel'].','.config('services.shop.admin_phone'), ','),
+                        'sender' => config('services.aligo.sender'),
                         'rdate' => '',
                         'rtime' => '',
-                        'testmode_yn' => 'N',
+                        'testmode_yn' => config('services.aligo.test_mode', 'Y'),
                         'subject' => '',
                         'image' => '',
                         'msg_type' => 'SMS',

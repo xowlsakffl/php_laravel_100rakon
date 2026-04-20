@@ -138,7 +138,7 @@
             성명 : 박장희<br/>
             직책 : 유통사업부 팀장<br/>
             직급 : 부장<br/>
-            연락처 :02-6288-6350, cs@100rakon.com<br/>
+            연락처 :{{ config('services.shop.customer_center_phone') }}, {{ config('services.shop.customer_center_email') }}<br/>
             ※ 개인정보 보호 담당부서로 연결됩니다.<br/>
             <br/>
             ▶ 개인정보 보호 담당부서<br/>

@@ -34,7 +34,7 @@ class TossController extends BaseController
         $orderId = $reqDatas['orderId'];
         $amount = $reqDatas['amount'];
 
-        $secretKey = env("TOSS_SECRET_KEY");
+        $secretKey = config('services.toss.secret_key');
         $url = 'https://api.tosspayments.com/v1/payments/' . $paymentKey;
 
         $data = ['orderId' => $orderId, 'amount' => $amount];
@@ -209,15 +209,14 @@ class TossController extends BaseController
                 //운영자 한테 알림문자 전송
                 $params =
                 [
-                    'user_id' => '100rakon',
-                    'key' => '5vfdzjv49p6auyo8tt4p04umiuf9cdk0',
+                    'user_id' => config('services.aligo.user_id'),
+                    'key' => config('services.aligo.api_key'),
                     'msg' => $responseArray['orderName'].'님 ['.$responseArray['method'].']'.number_format($responseArray['totalAmount']).'원 결제완료',
-                    'receiver' => "010-7182-7669",
-                    'sender' => '02-6288-6350',
-                    // 'sender' => '010-7182-7669',
+                    'receiver' => config('services.shop.admin_phone'),
+                    'sender' => config('services.aligo.sender'),
                     'rdate' => '',
                     'rtime' => '',
-                    'testmode_yn' => 'N',
+                    'testmode_yn' => config('services.aligo.test_mode', 'Y'),
                     'subject' => '',
                     'image' => '',
                     'msg_type' => 'SMS',
@@ -275,9 +274,14 @@ class TossController extends BaseController
     {
         //초기 데이터 설정
         $reqDatas = $request->all();
-        $secret = $reqDatas['secret'];
-        $status = $reqDatas['status'];
-        $orderId = $reqDatas['orderId'];
+        $secret = $reqDatas['secret'] ?? '';
+        $status = $reqDatas['status'] ?? '';
+        $orderId = $reqDatas['orderId'] ?? '';
+        $webhookSecret = config('services.toss.webhook_secret');
+
+        if($webhookSecret && !hash_equals($webhookSecret, $secret)) {
+            abort(403);
+        }
 
         //토스내역 DB에 저장
         PayTossTransaction::create($reqDatas);
@@ -339,15 +343,14 @@ class TossController extends BaseController
         }
         $params =
         [
-            'user_id' => '100rakon',
-            'key' => '5vfdzjv49p6auyo8tt4p04umiuf9cdk0',
+            'user_id' => config('services.aligo.user_id'),
+            'key' => config('services.aligo.api_key'),
             'msg' => $msg,
-            'receiver' => "010-7182-7669",
-            // 'receiver' => "010-9190-5924",
-            'sender' => '02-6288-6350',
+            'receiver' => config('services.shop.admin_phone'),
+            'sender' => config('services.aligo.sender'),
             'rdate' => '',
             'rtime' => '',
-            'testmode_yn' => 'N',
+            'testmode_yn' => config('services.aligo.test_mode', 'Y'),
             'subject' => '',
             'image' => '',
             'msg_type' => 'SMS',

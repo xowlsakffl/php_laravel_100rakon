@@ -51,14 +51,14 @@ class QnaController extends BaseController
         //문자메세지 전송
         $params =
         [
-            'user_id' => '100rakon',
-            'key' => '5vfdzjv49p6auyo8tt4p04umiuf9cdk0',
+            'user_id' => config('services.aligo.user_id'),
+            'key' => config('services.aligo.api_key'),
             'msg' => $data['name'].'('.$data['tel'].')님 문의사항 입력됨',
-            'receiver' => '010-7182-7669',
-            'sender' => '010-7182-7669',
+            'receiver' => config('services.shop.admin_phone'),
+            'sender' => config('services.aligo.sender'),
             'rdate' => '',
             'rtime' => '',
-            'testmode_yn' => 'N',
+            'testmode_yn' => config('services.aligo.test_mode', 'Y'),
             'subject' => '',
             'image' => '',
             'msg_type' => 'SMS',

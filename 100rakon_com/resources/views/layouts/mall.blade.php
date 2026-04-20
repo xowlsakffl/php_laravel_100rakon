@@ -276,7 +276,7 @@ $(window).scroll(function(){
             <div class="footer_left">
                 <div class="logo"><img src="/images/logo_header.png"/></div>
                 <div class="copyright">Copyright ⓒ 2021 <b>100rakON</b>. All Rights Reserved.</div>
-                <div class="cs">고객센터 <a href="tel:02-6288-6350">02-6288-6350</a></div>
+                <div class="cs">고객센터 <a href="tel:{{ config('services.shop.customer_center_phone') }}">{{ config('services.shop.customer_center_phone') }}</a></div>
                 <div class="open showPCTablet">
                     운영시간 : 10:00 ~ 18:00  /  점심 : 11:30 ~ 12:30<br/>
                     (토, 일, 공휴일 휴무)
@@ -294,7 +294,7 @@ $(window).scroll(function(){
                     <a href="/terms-privacy" target="_blank">개인정보 취급방침</a>
                 </div>
                 <div>06572 서울특별시 서초구 방배로 183, 동주빌딩 3층</div>
-                <div>팩스 02.6288.6399<span>|</span>이메일 cs@100rakon.com</div>
+                <div>팩스 02.6288.6399<span>|</span>이메일 {{ config('services.shop.customer_center_email') }}</div>
                 <div>사업자번호 216-81-43374<span>|</span>통신판매업 2022-서울서초-0235</div>
                 <div>(주)백락온 대표 김분희</div>
             </div>
@@ -306,7 +306,7 @@ $(window).scroll(function(){
                 </div>
                 <div>대표 김분희<span>|</span>사업자번호 216-81-43374</div>
                 <div>06572 서울특별시 서초구 방배로 183, 동주빌딩 3층</div>
-                <div>팩스 02.6288.6399<span>|</span>이메일 cs@100rakon.com</div>
+                <div>팩스 02.6288.6399<span>|</span>이메일 {{ config('services.shop.customer_center_email') }}</div>
                 <div>통신판매업 2022-서울서초-0235</div>
             </div>
         </div>

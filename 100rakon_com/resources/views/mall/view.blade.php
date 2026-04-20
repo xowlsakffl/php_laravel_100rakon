@@ -64,7 +64,7 @@ $thumbnail = $product->thumbnail;
             </div>
             <div class="exp_line">
                 <div class="head">결제</div>
-                <div class="tail">하나은행 176-910036-83704 ㈜백락온</div>
+                <div class="tail">{{ config('services.shop.bank_account_text') }}</div>
             </div>
             <div class="exp_line borderbNone">
                 <div class="head">수량</div>

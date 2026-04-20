@@ -282,15 +282,14 @@ class OutstandController extends Controller
             //문자메세지 전송
             $params =
             [
-                'user_id' => '100rakon',
-                'key' => '5vfdzjv49p6auyo8tt4p04umiuf9cdk0',
-                'msg' => $data['pay_name'].'님 하나은행 176-910036-83704 ㈜백락온으로 '.number_format($data['total_amount']).'원 입금바랍니다.',
-                'receiver' => $data['pay_tel'].",010-7182-7669",
-                'sender' => '02-6288-6350',
-                // 'sender' => '010-7182-7669',
+                'user_id' => config('services.aligo.user_id'),
+                'key' => config('services.aligo.api_key'),
+                'msg' => $data['pay_name'].'님 '.config('services.shop.bank_account_text').'으로 '.number_format($data['total_amount']).'원 입금바랍니다.',
+                'receiver' => trim($data['pay_tel'].','.config('services.shop.admin_phone'), ','),
+                'sender' => config('services.aligo.sender'),
                 'rdate' => '',
                 'rtime' => '',
-                'testmode_yn' => 'N',
+                'testmode_yn' => config('services.aligo.test_mode', 'Y'),
                 'subject' => '',
                 'image' => '',
                 'msg_type' => 'SMS',
