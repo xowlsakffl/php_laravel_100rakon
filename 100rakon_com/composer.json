@@ -1,14 +1,15 @@
 {
-    "name": "laravel/laravel",
+    "name": "xowlsakffl/100rakon",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Laravel shopping mall for product, subscription, order, payment, and admin management.",
     "keywords": [
-        "framework",
-        "laravel"
+        "laravel",
+        "shopping-mall",
+        "ecommerce"
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.2",
+        "php": "^7.3",
         "doctrine/dbal": "^3.2",
         "fideloper/proxy": "^4.0",
         "guzzlehttp/guzzle": "^7.4",
