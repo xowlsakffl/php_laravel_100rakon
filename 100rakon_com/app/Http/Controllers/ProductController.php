@@ -7,8 +7,6 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use App\File;
 use App\Product;
 
 class ProductController extends BaseController
@@ -24,13 +22,8 @@ class ProductController extends BaseController
 
     public function view($pdx)
     {
-        //프로덕트 가져오기
-        $product = Product::find($pdx);
+        $product = Product::findOrFail($pdx);
 
-        //파일가져오기
-        // $thumbnail = File::find($product->thumbnail_fdx);
-
-        // return view('mall.view', ['pdx' => $pdx, 'product' => $product, 'thumbnail' => $thumbnail]);
         return view('mall.view', ['pdx' => $pdx, 'product' => $product]);
     }
 }

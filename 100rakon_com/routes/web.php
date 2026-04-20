@@ -23,7 +23,7 @@ Route::get('product', 'ProductController@index');
 Route::get('product/{pdx}', 'ProductController@view')->name('product.show');
 
 // 주문관련
-Route::post('order', 'OrderController@order');
+Route::post('order', 'OrderController@order')->middleware('auth');
 Route::post('order-save', 'OrderController@orderSave')->middleware('auth');
 Route::get('order/basket', 'OrderController@basket')->middleware('auth');
 Route::get('order/basket-direct', 'OrderController@basketDirect')->middleware('auth');
@@ -88,9 +88,9 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('check.ad
         'outstands' => 'osdx'
     ]);
 
-    Route::resource('/outstand-categories', 'AdminOutstandCategoryController')->parameters(['outstand-categories' => 'oscdx?']);
-
-    Route::resource('/outstand-orders', 'AdminOutstandOrderController')->parameters(['outstand-orders' => 'osodx?']);
+    Route::resource('/outstand-categories', 'AdminOutstandCategoryController')->parameters([
+        'outstand-categories' => 'oscdx'
+    ]);
 
     Route::post('/outstands/remove/{fdx}', 'AdminOutstandController@removeImage')->name('outstands.removeimage');
 
@@ -110,8 +110,12 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('check.ad
     Route::post('/products/remove/{fdx}', 'AdminProductController@removeImage')->name('products.removeimage');
 
     //정기배송
-    Route::resource('/subscrib-categories', 'AdminSubscribGoodCategoryController')->parameters(['subscrib-categories' => 'sgcdx?']);
-    Route::resource('/subscrib-goods', 'AdminSubscribGoodController')->parameters(['subscrib-goods' => 'sgdx?']);
+    Route::resource('/subscrib-categories', 'AdminSubscribGoodCategoryController')->parameters([
+        'subscrib-categories' => 'sgcdx'
+    ]);
+    Route::resource('/subscrib-goods', 'AdminSubscribGoodController')->parameters([
+        'subscrib-goods' => 'sgdx'
+    ]);
     Route::post('/subscrib-goods/remove/{fdx}', 'AdminSubscribGoodController@removeImage')->name('subscrib-goods.removeimage');
 
     Route::post('/subscrib-orders/history-create', 'AdminSubscribOrderController@historyCreate');

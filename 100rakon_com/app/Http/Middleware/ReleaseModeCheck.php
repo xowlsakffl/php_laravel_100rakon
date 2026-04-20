@@ -15,13 +15,10 @@ class ReleaseModeCheck
      */
     public function handle($request, Closure $next)
     {
-        //모드에 따라 허용된 IP인지 확인 : 개발은 개발끼리, 라이브는 라이브 끼리
-        if(env("APP_ENV") == 'dev')
-        {
-            //허용된 IP가 아닌경우
-            $allowIps = explode('|', env("APP_ARROW_IP"));
-            if(!in_array($_SERVER['REMOTE_ADDR'], $allowIps))
-            {
+        if(app()->environment('dev')) {
+            $allowIps = config('app.allow_ips', ['127.0.0.1', '::1']);
+
+            if(!in_array($request->ip(), $allowIps, true)) {
                 return response('ACCESS NOT READY');
             }
         }
