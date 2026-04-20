@@ -1,46 +1,123 @@
-# 백락온 쇼핑몰
-![WDA](https://user-images.githubusercontent.com/50791439/194876606-79a5b9c2-52ae-4b3b-ba15-ee29a8bb3155.PNG)
-백락온 쇼핑몰은 최신 트렌드와 고객의 니즈를 반영한 다양한 상품을 제공하는 온라인 쇼핑몰입니다. 퍼블리싱, 결제 시스템, 관리자 페이지, 상품 관리 등 전반적인 개발을 통해 사용자에게 편리하고 신뢰할 수 있는 쇼핑 경험을 제공합니다.
+# 100rakon 쇼핑몰
 
-## 프로젝트 개요
+Laravel 6 기반의 건강식품 쇼핑몰 프로젝트입니다. 일반 상품 판매, 정기배송 상품, 특별상품 주문, Toss Payments 결제 연동, 회원/배송지/주문 관리, 관리자 페이지를 포함합니다.
 
-### 목적
+포트폴리오 관점에서 핵심은 단순 화면 구현이 아니라 쇼핑몰 운영 흐름 전체를 Laravel MVC 구조로 구현한 점입니다. 주문 생성, 장바구니, 결제 콜백, 주문 상태 변경, 관리자 CRUD, 이미지 업로드, SMS 알림 기록까지 하나의 서비스 흐름으로 연결되어 있습니다.
 
-백락온 쇼핑몰의 주요 목적은 다음과 같습니다:
+## 주요 기능
 
-1. **편리한 쇼핑 경험 제공**: 사용자 친화적인 인터페이스와 다양한 결제 옵션을 통해 손쉽고 편리한 쇼핑 경험을 제공합니다.
-2. **효율적인 상품 관리**: 관리자 페이지를 통해 상품의 등록, 수정, 삭제 등 전반적인 관리를 효율적으로 수행할 수 있습니다.
-3. **안전한 결제 시스템**: 토스 결제 시스템을 도입하여 안전하고 신속한 결제를 지원합니다.
-4. **배송 API 연동**: 배송 추적 및 상태를 관리합니다.
-   
-### 주요 기능
+- 회원가입, 로그인, 이메일 인증
+- 카카오/네이버 소셜 로그인 연동 구조
+- 상품 목록, 상품 상세, 장바구니
+- 일반 주문, 정기배송 주문, 특별상품 주문
+- Toss Payments 결제 성공/실패/가상계좌 콜백 처리
+- 주문 상태와 주문 히스토리 관리
+- 배송지 저장 및 재사용
+- 고객 문의 등록 및 관리자 확인
+- 상품/카테고리/회원/주문 관리자 페이지
+- 상품 이미지 업로드 및 삭제
+- Aligo SMS 알림 발송 내역 저장
 
-- **퍼블리싱**: 사용자 친화적인 웹 인터페이스를 설계하고 구현하여, 고객이 쉽게 탐색하고 쇼핑할 수 있도록 합니다. 반응형 디자인을 적용하여 다양한 디바이스에서 최적의 사용자 경험을 제공합니다.
-  
-- **결제 시스템**: 토스 결제 시스템을 통합하여 안전하고 신속한 결제를 지원합니다. 간편 결제, 카드 결제, 계좌 이체 등 다양한 결제 옵션을 제공합니다.
-  
-- **관리자 페이지**: 관리자 페이지를 통해 상품의 등록, 수정, 삭제, 재고 관리, 주문 처리 등을 효율적으로 관리할 수 있습니다. 직관적인 대시보드를 통해 실시간으로 매출, 주문 현황 등을 파악할 수 있습니다.
-  
-- **상품 관리**: 상품의 카테고리 분류, 상세 정보 입력, 이미지 업로드 등 전반적인 상품 관리를 지원합니다.
-  
-- **고객 관리**: 고객의 주문 내역, 결제 내역, 배송 상태 등을 확인하고 관리할 수 있습니다. 고객의 피드백을 수집하여 서비스 개선에 반영합니다.
+## 기술 스택
 
-## 사용 기술
+- PHP 7.3+
+- Laravel 6
+- MySQL
+- Blade
+- Laravel Mix
+- Sass
+- Toss Payments
+- Aligo SMS
+- Kakao/Naver OAuth
 
-백락온 쇼핑몰은 다음과 같은 기술 스택을 사용하여 개발되었습니다:
+## 프로젝트 구조
 
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+```text
+100rakon_com/
+├── app/                    # Model, Controller, Middleware, Provider
+├── config/                 # Laravel 실행 설정
+├── database/
+│   ├── migrations/          # 테이블 스키마
+│   ├── factories/
+│   └── seeds/
+├── public/                 # 웹 루트, 빌드된 정적 파일
+├── resources/
+│   ├── views/               # Blade 화면
+│   ├── sass/                # 쇼핑몰/관리자 스타일
+│   └── js/
+├── routes/                 # web/api route
+├── storage/                # 업로드/캐시/로그
+└── bootstrap/              # Laravel bootstrap
+```
 
-## 기대 효과
+## 실행 준비
 
-- **고객 만족도 향상**: 사용자 친화적인 인터페이스와 다양한 결제 옵션을 통해 고객 만족도를 높일 수 있습니다.
-- **운영 효율성 증대**: 관리자 페이지를 통해 효율적인 상품 관리와 주문 처리가 가능하여 운영의 효율성을 극대화할 수 있습니다.
-- **매출 증대**: 최신 트렌드와 고객의 요구를 반영한 다양한 상품을 제공하여 매출을 증대할 수 있습니다.
-- **데이터 기반 의사결정**: 통계 및 분석 기능을 통해 데이터에 기반한 마케팅 전략을 수립할 수 있습니다.
+```bash
+cd 100rakon_com
+composer install
+npm install
+cp .env.example .env
+php artisan key:generate
+```
 
-## 소요기간 ⏱️
-- 6개월
+PowerShell:
 
-## 개발인원
-- 3명
+```powershell
+Set-Location 100rakon_com
+composer install
+npm install
+Copy-Item .env.example .env
+php artisan key:generate
+```
+
+`.env`에서 DB 정보를 설정한 뒤 마이그레이션을 실행합니다.
+
+```bash
+php artisan migrate
+php artisan storage:link
+npm run dev
+php artisan serve
+```
+
+## 주요 환경변수
+
+| 변수 | 설명 |
+| --- | --- |
+| `APP_URL` | 서비스 URL. Toss 콜백 URL 생성에 사용 |
+| `DB_DATABASE` | MySQL 데이터베이스명 |
+| `DB_USERNAME` | DB 계정 |
+| `DB_PASSWORD` | DB 비밀번호 |
+| `TOSS_CLIENT_KEY` | Toss Payments 클라이언트 키 |
+| `TOSS_SECRET_KEY` | Toss Payments 시크릿 키 |
+| `TOSS_WEBHOOK_SECRET` | Toss 가상계좌/웹훅 검증용 secret |
+| `ALIGO_USER_ID` | Aligo SMS 계정 |
+| `ALIGO_API_KEY` | Aligo SMS API Key |
+| `ALIGO_SENDER` | SMS 발신번호 |
+| `SHOP_ADMIN_PHONE` | 운영자 알림 수신 번호 |
+| `SHOP_BANK_ACCOUNT_TEXT` | 무통장 입금 안내 계좌 문구 |
+| `KAKAO_CLIENT_ID` | 카카오 OAuth Client ID |
+| `NAVER_CLIENT_ID` | 네이버 OAuth Client ID |
+
+실제 결제 키, SMS 키, 운영자 연락처, 입금 계좌는 코드에 넣지 않고 `.env`에서 관리합니다.
+
+## 보완한 부분
+
+- Laravel 실행에 필요한 `bootstrap/`과 `config/` 구조 복구
+- `.env.example`과 `.gitignore` 추가
+- 관리자 접근 미들웨어에서 비로그인 사용자의 null 접근 오류 방지
+- 관리자 권한이 없는 사용자는 403으로 차단
+- 허용 IP 환경변수명을 `APP_ALLOW_IPS`로 통일
+- 상품 상세 조회를 `findOrFail`로 변경해 없는 상품 접근 시 404 처리
+- 주문 페이지 진입 라우트에 인증 미들웨어 적용
+- Toss 가상계좌 콜백의 `secret` 검증 추가
+- 잘못된 resource parameter(`oscdx?`, `sgcdx?`, `sgdx?`) 정리
+- 중복 등록된 특별상품 주문 관리자 라우트 제거
+- SMS API Key, 운영자 전화번호, 입금 계좌 하드코딩 제거
+- README 인코딩 깨짐 수정 및 실행 방법 재작성
+
+## 주의 사항
+
+- 이 저장소에는 운영 DB, 실결제 키, SMS 키가 포함되어 있지 않습니다.
+- `public/`에 빌드 산출물이 포함되어 있으나, 수정 개발 시에는 `resources/`와 Laravel Mix 기준으로 작업하는 것이 맞습니다.
+- Laravel 6 기반 프로젝트라 최신 Laravel 프로젝트와 디렉터리/설정 방식이 다릅니다.
+- 결제와 SMS는 외부 서비스 키가 있어야 실제 동작합니다.
