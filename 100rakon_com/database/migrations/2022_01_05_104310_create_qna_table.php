@@ -20,7 +20,7 @@ class CreateQnaTable extends Migration
             $table->string('email', 150)->default("이메일");
             $table->unsignedBigInteger('udx')->nullable();
             $table->integer('parent')->default(0);
-            $table->text('content')->default("");
+            $table->text('content')->nullable();
             $table->unsignedTinyInteger('state')->default(10);
             $table->unsignedBigInteger('hit')->default(0);
             $table->timestamps();

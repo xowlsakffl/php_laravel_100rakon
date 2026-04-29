@@ -17,7 +17,7 @@ class CreateOutstandHistoriesTable extends Migration
             $table->bigIncrements('idx');
             $table->unsignedBigInteger('osodx');
             $table->string('kind', 20)->default("기타");
-            $table->text('content')->default("");
+            $table->text('content')->nullable();
             $table->timestamps();
 
             $table->foreign('osodx')->references('osodx')->on('outstand_orders')->onDelete('cascade');

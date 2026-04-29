@@ -28,7 +28,7 @@ class CreateOutstandOrdersTable extends Migration
             $table->string('delivery_address2')->default("")->nullable();
             $table->string('delivery_name', 30)->default("")->nullable();
             $table->string('delivery_tel', 30)->default("")->nullable();
-            $table->text('delivery_msg')->default("")->nullable();
+            $table->text('delivery_msg')->nullable();
             $table->string('receipt_kind', 20)->default("세금계산서");
             $table->string('company_regist_number', 20)->default("");
             $table->string('company_name', 100)->default("");

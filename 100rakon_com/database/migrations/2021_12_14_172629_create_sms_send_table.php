@@ -20,9 +20,9 @@ class CreateSmsSendTable extends Migration
             $table->unsignedBigInteger('odx')->nullable();
             $table->string('sender', 30)->default("");
             $table->string('receiver', 30)->default("");
-            $table->text('msg')->default("");
+            $table->text('msg')->nullable();
             $table->string('msg_type', 10)->default("");
-            $table->text('title')->default("");
+            $table->text('title')->nullable();
             $table->string('destination', 10)->default("");
             $table->string('rdate', 10)->default("YYYYMMDD");
             $table->string('rtime', 10)->default("HHII");

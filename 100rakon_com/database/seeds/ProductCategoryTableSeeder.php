@@ -12,6 +12,14 @@ class ProductCategoryTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(ProductCategory::class, 1)->create();
+        ProductCategory::query()->updateOrCreate(
+            ['pcdx' => 1],
+            [
+                'sequence' => 1,
+                'cname' => '해양심층수',
+                'parent' => 0,
+                'state' => 10,
+            ]
+        );
     }
 }

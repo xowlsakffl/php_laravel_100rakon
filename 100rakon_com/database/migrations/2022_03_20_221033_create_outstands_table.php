@@ -21,7 +21,7 @@ class CreateOutstandsTable extends Migration
             $table->string('name', 150)->default("제품명");
             $table->unsignedBigInteger('price')->default(0);
             $table->unsignedBigInteger('quantity')->default(0);
-            $table->text('content')->default("");
+            $table->text('content')->nullable();
             $table->unsignedTinyInteger('state')->default(10);
             $table->unsignedBigInteger('hit')->default(0);
             $table->integer('price_normal')->default(0);

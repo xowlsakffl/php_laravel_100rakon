@@ -16,7 +16,7 @@ class CreateFilesTable extends Migration
         Schema::create('files', function (Blueprint $table) {
             $table->bigIncrements('fdx');
             $table->unsignedBigInteger('udx')->default(NULL)->nullable();
-            $table->text('up_name')->default("");
+            $table->text('up_name')->nullable();
             $table->string('real_name')->default("");
             $table->unsignedInteger('size')->default(0);
             $table->string('extension', 10)->default("");

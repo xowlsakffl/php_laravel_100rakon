@@ -1,5 +1,14 @@
 <?php
 Auth::routes(['verify' => true]);
+
+if (app()->environment('local')) {
+    Route::get('/_demo/login', function (\Illuminate\Http\Request $request) {
+        $user = \App\User::where('email', 'demo@100rakon.local')->firstOrFail();
+        \Illuminate\Support\Facades\Auth::login($user);
+
+        return redirect($request->query('redirect', '/'));
+    });
+}
 // Route::get('/logout', 'HomeController@index')->name('home')->middleware('verified');
 // Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
 

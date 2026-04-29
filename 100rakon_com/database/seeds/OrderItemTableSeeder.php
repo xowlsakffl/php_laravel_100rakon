@@ -15,5 +15,3 @@ class OrderItemTableSeeder extends Seeder
         factory(OrderItem::class, 600)->create();
     }
 }
-  }
-}

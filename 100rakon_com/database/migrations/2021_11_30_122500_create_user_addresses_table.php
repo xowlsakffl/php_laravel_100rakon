@@ -22,7 +22,7 @@ class CreateUserAddressesTable extends Migration
             $table->string('address2')->default("");
             $table->string('name', 30)->default("");
             $table->string('tel', 30)->default("");
-            $table->text('msg')->default("");
+            $table->text('msg')->nullable();
             $table->timestamps();
             $table->softDeletes();
 

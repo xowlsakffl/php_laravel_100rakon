@@ -39,7 +39,7 @@ class CreatePayTossTransactionTable extends Migration
             $table->string('card_cardType', 20)->default("");
             $table->string('card_ownerType', 20)->default("");
             $table->string('card_acauireStatus', 30)->default("");
-            $table->text('card_receiptUrl')->default("");
+            $table->text('card_receiptUrl')->nullable();
 
             $table->string('virtual_accountType', 20)->default("");
             $table->string('virtual_accountNumber', 100)->default("");
@@ -62,10 +62,10 @@ class CreatePayTossTransactionTable extends Migration
             $table->integer('cashRct_amount')->default(0);
             $table->integer('cashRct_taxFreeAmount')->default(0);
             $table->string('cashRct_issueNumber', 50)->default("");
-            $table->text('cashRct_receiptUrl')->default("");
+            $table->text('cashRct_receiptUrl')->nullable();
 
             $table->integer('cancel_amount')->default(0);
-            $table->text('cancel_reason')->default("");
+            $table->text('cancel_reason')->nullable();
             $table->integer('cancel_taxFreeAmount')->default(0);
             $table->integer('cancel_taxAmount')->default(0);
             $table->integer('cancel_refundableAmount')->default(0);

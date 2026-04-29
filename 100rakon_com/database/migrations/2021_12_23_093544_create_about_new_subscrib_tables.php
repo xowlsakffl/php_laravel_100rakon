@@ -57,7 +57,7 @@ class CreateAboutNewSubscribTables extends Migration
             $table->bigIncrements('idx');
             $table->unsignedBigInteger('sodx');
             $table->string('kind', 20)->default("기타");
-            $table->text('content')->default("");
+            $table->text('content')->nullable();
             $table->timestamps();
 
             $table->foreign('sodx')->references('sodx')->on('subscrib_orders')->onDelete('cascade');
@@ -68,7 +68,7 @@ class CreateAboutNewSubscribTables extends Migration
             $table->bigIncrements('idx');
             $table->unsignedBigInteger('odx');
             $table->string('kind', 20)->default("기타");
-            $table->text('content')->default("");
+            $table->text('content')->nullable();
             $table->timestamps();
 
             $table->foreign('odx')->references('odx')->on('orders')->onDelete('cascade');
